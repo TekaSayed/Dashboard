@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GemStore | Courses</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <link rel="stylesheet" href="CSS/GemStore.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page flex m-0">
+      <aside class="relative py-6 px-3 bg-white w-1/6">
+        <h1 class="relative mb-6 pb-3 text-center text-xl font-bold h1-head">
+          <span>Gem</span
+          ><span class="text-3xl mx-1 mb-1 text-[var(--blue-color)]">S</span
+          ><span>tore</span>
+        </h1>
+        <ul class="flex flex-col gap-6">
+          <li>
+            <a href="Dashboard.html">
+              <i class="fa-regular fa-chart-bar"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="Settings.html">
+              <i class="fa-solid fa-gear"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+          <li>
+            <a href="Profile.html">
+              <i class="fa-regular fa-user"></i>
+              <span>Profile</span>
+            </a>
+          </li>
+          <li>
+            <a href="Projects.html">
+              <i class="fa-solid fa-diagram-project"></i>
+              <span>Projects</span>
+            </a>
+          </li>
+          <li class="active">
+            <a href="Courses.html">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <span>Courses</span>
+            </a>
+          </li>
+          <li>
+            <a href="Friends.html">
+              <i class="fa-regular fa-circle-user"></i>
+              <span>Friends</span>
+            </a>
+          </li>
+          <li>
+            <a href="Files.html">
+              <i class="fa-regular fa-file"></i>
+              <span>Files</span>
+            </a>
+          </li>
+          <li>
+            <a href="Plans.html">
+              <i class="fa-regular fa-credit-card"></i>
+              <span>Plans</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <div class="content w-full bg-slate-200 overflow-hidden">
+        <header
+          class="flex w-full bg-white justify-between items-center h-fit p-5"
+        >
+          <span class="search relative">
+            <input
+              type="text"
+              placeholder="Type A Keyword"
+              class="w-48 pl-8 py-2 rounded-lg max-md:w-36 max-md:placeholder:text-sm"
+            />
+          </span>
+          <div class="flex items-center relative">
+            <span class="icon mr-3 relative">
+              <i class="fa-regular fa-bell fa-xl"></i>
+            </span>
+            <img class="w-9" src="images/avatar.png" alt="avatar-img" />
+          </div>
+        </header>
+        <section class="p-2">
+          <h1 class="m-head">Courses</h1>
+          <div class="cours-grid">
+            <div class="bg-white rounded-md">
+              <span class="relative">
+                <img src="images/Courses/course-01.jpg" class="rounded-t-md" />
+                <img
+                  src="images/Projects/team-01.png"
+                  class="absolute z-10 w-16 rounded-full border-2 border-solid border-white top-5 left-5"
+                />
+              </span>
+              <div class="flex flex-col p-5 mb-7">
+                <h1 class="mb-4 font-bold text-[1rem]">Mastering Web Design</h1>
+                <p class="text-[14px] font-semibold opacity-60 leading-6">
+                  Master The Art Of Web Designing And Mocking, Prototyping And
+                  Creating Web Design Architecture
+                </p>
+              </div>
+              <div
+                class="flex justify-between p-4 font-semibold border-t border-solid relative"
+              >
+                <span class="absolute left-1/2 translate-x-[-50%] top-[-25%]">
+                  <a
+                    href="#"
+                    class="bg-[var(--blue-color)] hover:bg-[var(--blue-alt-color)] text-white text-xs p-2 rounded-lg"
+                  >
+                    Course Info
+                  </a>
+                </span>
+                <span class="opacity-40">
+                  <i class="fa-regular fa-user"></i>
+                  <span>950</span>
+                </span>
+                <span class="opacity-40">$&nbsp;165</span>
+              </div>
+            </div>
+            <div class="bg-white rounded-md">
+              <span class="relative">
+                <img src="images/Courses/course-02.jpg" class="rounded-t-md" />
+                <img
+                  src="images/Projects/team-02.png"
+                  class="absolute z-10 w-16 rounded-full border-2 border-solid border-white top-5 left-5"
+                />
+              </span>
+              <div class="flex flex-col p-5 mb-7">
+                <h1 class="mb-4 font-bold text-[1rem]">
+                  Data Structure And Algorithms
+                </h1>
+                <p class="text-[14px] font-semibold opacity-60 leading-6">
+                  Master The Art Of Web Designing And Mocking, Prototyping And
+                  Creating Web Design Architecture
+                </p>
+              </div>
+              <div
+                class="flex justify-between p-4 font-semibold border-t border-solid relative"
+              >
+                <span class="absolute left-1/2 translate-x-[-50%] top-[-25%]">
+                  <a
+                    href="#"
+                    class="bg-[var(--blue-color)] hover:bg-[var(--blue-alt-color)] text-white text-xs p-2 rounded-lg"
+                  >
+                    Course Info
+                  </a>
+                </span>
+                <span class="opacity-40">
+                  <i class="fa-regular fa-user"></i>
+                  <span>1150</span>
+                </span>
+                <span class="opacity-40">$&nbsp;210</span>
+              </div>
+            </div>
+            <div class="bg-white rounded-md">
+              <span class="relative">
+                <img src="images/Courses/course-03.jpg" class="rounded-t-md" />
+                <img
+                  src="images/Projects/team-01.png"
+                  class="absolute z-10 w-16 rounded-full border-2 border-solid border-white top-5 left-5"
+                />
+              </span>
+              <div class="flex flex-col p-5 mb-7">
+                <h1 class="mb-4 font-bold text-[1rem]">
+                  Responsive Web Design
+                </h1>
+                <p class="text-[14px] font-semibold opacity-60 leading-6">
+                  Master The Art Of Web Designing And Mocking, Prototyping And
+                  Creating Web Design Architecture
+                </p>
+              </div>
+              <div
+                class="flex justify-between p-4 font-semibold border-t border-solid relative"
+              >
+                <span class="absolute left-1/2 translate-x-[-50%] top-[-25%]">
+                  <a
+                    href="#"
+                    class="bg-[var(--blue-color)] hover:bg-[var(--blue-alt-color)] text-white text-xs p-2 rounded-lg"
+                  >
+                    Course Info
+                  </a>
+                </span>
+                <span class="opacity-40">
+                  <i class="fa-regular fa-user"></i>
+                  <span>650</span>
+                </span>
+                <span class="opacity-40">$&nbsp;90</span>
+              </div>
+            </div>
+            <div class="bg-white rounded-md">
+              <span class="relative">
+                <img src="images/Courses/course-04.jpg" class="rounded-t-md" />
+                <img
+                  src="images/Projects/team-03.png"
+                  class="absolute z-10 w-16 rounded-full border-2 border-solid border-white top-5 left-5"
+                />
+              </span>
+              <div class="flex flex-col p-5 mb-7">
+                <h1 class="mb-4 font-bold text-[1rem]">Mastering Python</h1>
+                <p class="text-[14px] font-semibold opacity-60 leading-6">
+                  Master The Art Of Web Designing And Mocking, Prototyping And
+                  Creating Web Design Architecture
+                </p>
+              </div>
+              <div
+                class="flex justify-between p-4 font-semibold border-t border-solid relative"
+              >
+                <span class="absolute left-1/2 translate-x-[-50%] top-[-25%]">
+                  <a
+                    href="#"
+                    class="bg-[var(--blue-color)] hover:bg-[var(--blue-alt-color)] text-white text-xs p-2 rounded-lg"
+                  >
+                    Course Info
+                  </a>
+                </span>
+                <span class="opacity-40">
+                  <i class="fa-regular fa-user"></i>
+                  <span>950</span>
+                </span>
+                <span class="opacity-40">$&nbsp;250</span>
+              </div>
+            </div>
+            <div class="bg-white rounded-md">
+              <span class="relative">
+                <img src="images/Courses/course-05.jpg" class="rounded-t-md" />
+                <img
+                  src="images/Projects/team-03.png"
+                  class="absolute z-10 w-16 rounded-full border-2 border-solid border-white top-5 left-5"
+                />
+              </span>
+              <div class="flex flex-col p-5 mb-7">
+                <h1 class="mb-4 font-bold text-[1rem]">PHP Examples</h1>
+                <p class="text-[14px] font-semibold opacity-60 leading-6">
+                  PHP Tutorials And Examples And Practice On Web Application And
+                  Connecting With Databases
+                </p>
+              </div>
+              <div
+                class="flex justify-between p-4 font-semibold border-t border-solid relative"
+              >
+                <span class="absolute left-1/2 translate-x-[-50%] top-[-25%]">
+                  <a
+                    href="#"
+                    class="bg-[var(--blue-color)] hover:bg-[var(--blue-alt-color)] text-white text-xs p-2 rounded-lg"
+                  >
+                    Course Info
+                  </a>
+                </span>
+                <span class="opacity-40">
+                  <i class="fa-regular fa-user"></i>
+                  <span>850</span>
+                </span>
+                <span class="opacity-40">$&nbsp;150</span>
+              </div>
+            </div>
+            <div class="bg-white rounded-md">
+              <span class="relative">
+                <img src="images/Courses/course-02.jpg" class="rounded-t-md" />
+                <img
+                  src="images/Projects/team-02.png"
+                  class="absolute z-10 w-16 rounded-full border-2 border-solid border-white top-5 left-5"
+                />
+              </span>
+              <div class="flex flex-col p-5 mb-7">
+                <h1 class="mb-4 font-bold text-[1rem]">
+                  Data Structure And Algorithms
+                </h1>
+                <p class="text-[14px] font-semibold opacity-60 leading-6">
+                  Master The Art Of Web Designing And Mocking, Prototyping And
+                  Creating Web Design Architecture
+                </p>
+              </div>
+              <div
+                class="flex justify-between p-4 font-semibold border-t border-solid relative"
+              >
+                <span class="absolute left-1/2 translate-x-[-50%] top-[-25%]">
+                  <a
+                    href="#"
+                    class="bg-[var(--blue-color)] hover:bg-[var(--blue-alt-color)] text-white text-xs p-2 rounded-lg"
+                  >
+                    Course Info
+                  </a>
+                </span>
+                <span class="opacity-40">
+                  <i class="fa-regular fa-user"></i>
+                  <span>1150</span>
+                </span>
+                <span class="opacity-40">$&nbsp;210</span>
+              </div>
+            </div>
+            <div class="bg-white rounded-md">
+              <span class="relative">
+                <img src="images/Courses/course-03.jpg" class="rounded-t-md" />
+                <img
+                  src="images/Projects/team-01.png"
+                  class="absolute z-10 w-16 rounded-full border-2 border-solid border-white top-5 left-5"
+                />
+              </span>
+              <div class="flex flex-col p-5 mb-7">
+                <h1 class="mb-4 font-bold text-[1rem]">
+                  Responsive Web Design
+                </h1>
+                <p class="text-[14px] font-semibold opacity-60 leading-6">
+                  Master The Art Of Web Designing And Mocking, Prototyping And
+                  Creating Web Design Architecture
+                </p>
+              </div>
+              <div
+                class="flex justify-between p-4 font-semibold border-t border-solid relative"
+              >
+                <span class="absolute left-1/2 translate-x-[-50%] top-[-25%]">
+                  <a
+                    href="#"
+                    class="bg-[var(--blue-color)] hover:bg-[var(--blue-alt-color)] text-white text-xs p-2 rounded-lg"
+                  >
+                    Course Info
+                  </a>
+                </span>
+                <span class="opacity-40">
+                  <i class="fa-regular fa-user"></i>
+                  <span>650</span>
+                </span>
+                <span class="opacity-40">$&nbsp;90</span>
+              </div>
+            </div>
+            <div class="bg-white rounded-md">
+              <span class="relative">
+                <img src="images/Courses/course-01.jpg" class="rounded-t-md" />
+                <img
+                  src="images/Projects/team-05.png"
+                  class="absolute z-10 w-16 rounded-full border-2 border-solid border-white top-5 left-5"
+                />
+              </span>
+              <div class="flex flex-col p-5 mb-7">
+                <h1 class="mb-4 font-bold text-[1rem]">Mastering Web Design</h1>
+                <p class="text-[14px] font-semibold opacity-60 leading-6">
+                  Master The Art Of Web Designing And Mocking, Prototyping And
+                  Creating Web Design Architecture
+                </p>
+              </div>
+              <div
+                class="flex justify-between p-4 font-semibold border-t border-solid relative"
+              >
+                <span class="absolute left-1/2 translate-x-[-50%] top-[-25%]">
+                  <a
+                    href="#"
+                    class="bg-[var(--blue-color)] hover:bg-[var(--blue-alt-color)] text-white text-xs p-2 rounded-lg"
+                  >
+                    Course Info
+                  </a>
+                </span>
+                <span class="opacity-40">
+                  <i class="fa-regular fa-user"></i>
+                  <span>850</span>
+                </span>
+                <span class="opacity-40">$&nbsp;145</span>
+              </div>
+            </div>
+            <div class="bg-white rounded-md">
+              <span class="relative">
+                <img src="images/Courses/course-05.jpg" class="rounded-t-md" />
+                <img
+                  src="images/Projects/team-03.png"
+                  class="absolute z-10 w-16 rounded-full border-2 border-solid border-white top-5 left-5"
+                />
+              </span>
+              <div class="flex flex-col p-5 mb-7">
+                <h1 class="mb-4 font-bold text-[1rem]">PHP Examples</h1>
+                <p class="text-[14px] font-semibold opacity-60 leading-6">
+                  PHP Tutorials And Examples And Practice On Web Application And
+                  Connecting With Databases
+                </p>
+              </div>
+              <div
+                class="flex justify-between p-4 font-semibold border-t border-solid relative"
+              >
+                <span class="absolute left-1/2 translate-x-[-50%] top-[-25%]">
+                  <a
+                    href="#"
+                    class="bg-[var(--blue-color)] hover:bg-[var(--blue-alt-color)] text-white text-xs p-2 rounded-lg"
+                  >
+                    Course Info
+                  </a>
+                </span>
+                <span class="opacity-40">
+                  <i class="fa-regular fa-user"></i>
+                  <span>850</span>
+                </span>
+                <span class="opacity-40">$&nbsp;150</span>
+              </div>
+            </div>
+            <div class="bg-white rounded-md">
+              <span class="relative">
+                <img src="images/Courses/course-04.jpg" class="rounded-t-md" />
+                <img
+                  src="images/Projects/team-04.png"
+                  class="absolute z-10 w-16 rounded-full border-2 border-solid border-white top-5 left-5"
+                />
+              </span>
+              <div class="flex flex-col p-5 mb-7">
+                <h1 class="mb-4 font-bold text-[1rem]">Mastering Python</h1>
+                <p class="text-[14px] font-semibold opacity-60 leading-6">
+                  Master The Art Of Web Designing And Mocking, Prototyping And
+                  Creating Web Design Architecture
+                </p>
+              </div>
+              <div
+                class="flex justify-between p-4 font-semibold border-t border-solid relative"
+              >
+                <span class="absolute left-1/2 translate-x-[-50%] top-[-25%]">
+                  <a
+                    href="#"
+                    class="bg-[var(--blue-color)] hover:bg-[var(--blue-alt-color)] text-white text-xs p-2 rounded-lg"
+                  >
+                    Course Info
+                  </a>
+                </span>
+                <span class="opacity-40">
+                  <i class="fa-regular fa-user"></i>
+                  <span>950</span>
+                </span>
+                <span class="opacity-40">$&nbsp;250</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

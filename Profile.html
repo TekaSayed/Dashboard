@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GemStore | Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <link rel="stylesheet" href="CSS/GemStore.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page flex m-0">
+      <aside class="relative py-6 px-3 bg-white w-1/6">
+        <h1 class="relative mb-6 pb-3 text-center text-xl font-bold h1-head">
+          <span>Gem</span
+          ><span class="text-3xl mx-1 mb-1 text-[var(--blue-color)]">S</span
+          ><span>tore</span>
+        </h1>
+        <ul class="flex flex-col gap-6">
+          <li>
+            <a href="Dashboard.html">
+              <i class="fa-regular fa-chart-bar"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="Settings.html">
+              <i class="fa-solid fa-gear"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+          <li class="active">
+            <a href="Profile.html">
+              <i class="fa-regular fa-user"></i>
+              <span>Profile</span>
+            </a>
+          </li>
+          <li>
+            <a href="Projects.html">
+              <i class="fa-solid fa-diagram-project"></i>
+              <span>Projects</span>
+            </a>
+          </li>
+          <li>
+            <a href="Courses.html">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <span>Courses</span>
+            </a>
+          </li>
+          <li>
+            <a href="Friends.html">
+              <i class="fa-regular fa-circle-user"></i>
+              <span>Friends</span>
+            </a>
+          </li>
+          <li>
+            <a href="Files.html">
+              <i class="fa-regular fa-file"></i>
+              <span>Files</span>
+            </a>
+          </li>
+          <li>
+            <a href="Plans.html">
+              <i class="fa-regular fa-credit-card"></i>
+              <span>Plans</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <div class="content w-full bg-slate-200 overflow-hidden">
+        <header
+          class="flex w-full bg-white justify-between items-center h-fit p-5"
+        >
+          <span class="search relative">
+            <input
+              type="text"
+              placeholder="Type A Keyword"
+              class="w-48 pl-8 py-2 rounded-lg max-md:w-36 max-md:placeholder:text-sm"
+            />
+          </span>
+          <div class="flex items-center relative">
+            <span class="icon mr-3 relative">
+              <i class="fa-regular fa-bell fa-xl"></i>
+            </span>
+            <img class="w-9" src="images/avatar.png" alt="avatar-img" />
+          </div>
+        </header>
+        <section class="p-2">
+          <h1 class="m-head">Profile</h1>
+          <div
+            class="flex bg-white mb-4 rounded-lg p-3 items-center max-md:flex-col"
+          >
+            <div
+              class="flex flex-col gap-4 justify-center items-center py-4 px-14 h-[80%] border-r border-r-solid border-zinc-200 max-md:border-none"
+            >
+              <img src="images/avatar.png" class="w-24" />
+              <h1 class="font-bold text-xl">Osama Elzero</h1>
+              <span class="opacity-45 font-semibold">Level 20</span>
+              <span
+                class="h-1 w-full rounded-full bg-gradient-to-r from-[var(--blue-color)] from-75% to-slate-200 to-75%"
+              ></span>
+              <span class="flex gap-1 text-[--orange-color]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+              <span class="opacity-65 font-semibold text-xs">550 Rating</span>
+            </div>
+            <div class="flex flex-col gap-4 p-5">
+              <div
+                class="pb-5 border-b-2 border-solid border-zinc-100 flex flex-col gap-2"
+              >
+                <h1 class="opacity-85">General Information</h1>
+                <div class="flex gap-11 max-lg:flex-col max-lg:gap-4">
+                  <div class="flex max-lg:flex-col">
+                    <span class="opacity-85 mr-1">Full Name:</span>
+                    <span>Osama Mohamed</span>
+                  </div>
+                  <div class="flex max-lg:flex-col">
+                    <span class="opacity-85 mr-1">Gender:</span>
+                    <span>Male</span>
+                  </div>
+                  <div class="flex max-lg:flex-col">
+                    <span class="opacity-85 mr-1">Country:</span>
+                    <span>Egypt</span>
+                  </div>
+                </div>
+                <div class="toggle-cont">
+                  <input type="checkbox" id="General" checked />
+                  <label for="General" class="toggle"></label>
+                </div>
+              </div>
+              <div
+                class="pb-5 border-b-2 border-solid border-zinc-100 flex flex-col gap-2"
+              >
+                <h1 class="opacity-85">Personal Information</h1>
+                <div class="flex gap-11 max-lg:flex-col max-lg:gap-4">
+                  <div class="flex max-lg:flex-col">
+                    <span class="opacity-85 mr-1">Email:</span>
+                    <span>o@nn.sa</span>
+                  </div>
+                  <div class="flex max-lg:flex-col">
+                    <span class="opacity-85 mr-1">Phone:</span>
+                    <span>019123456789</span>
+                  </div>
+                  <div class="flex max-lg:flex-col">
+                    <span class="opacity-85 mr-1">Date Of Birth:</span>
+                    <span>25/10/1982</span>
+                  </div>
+                </div>
+                <div class="toggle-cont">
+                  <input type="checkbox" id="Personal" />
+                  <label for="Personal" class="toggle"></label>
+                </div>
+              </div>
+              <div
+                class="pb-5 border-b-2 border-solid border-zinc-100 flex flex-col gap-2"
+              >
+                <h1 class="opacity-85">Job Information</h1>
+                <div class="flex gap-11 max-lg:flex-col max-lg:gap-4">
+                  <div class="flex max-lg:flex-col">
+                    <span class="opacity-85 mr-1">Title:</span>
+                    <span>Full Stack Developer</span>
+                  </div>
+                  <div class="flex max-lg:flex-col">
+                    <span class="opacity-85 mr-1">Programming Language:</span>
+                    <span>Python</span>
+                  </div>
+                  <div class="flex max-lg:flex-col">
+                    <span class="opacity-85 mr-1">Years Of Experience:</span>
+                    <span>15+</span>
+                  </div>
+                </div>
+                <div class="toggle-cont">
+                  <input type="checkbox" id="Job" checked />
+                  <label for="Job" class="toggle"></label>
+                </div>
+              </div>
+              <div class="flex flex-col gap-2">
+                <h1 class="opacity-85">Billing Information</h1>
+                <div class="flex gap-11 max-lg:flex-col max-lg:gap-4">
+                  <div class="flex max-lg:flex-col">
+                    <span class="opacity-85 mr-1">Payment Method:</span>
+                    <span>Paypal</span>
+                  </div>
+                  <div class="flex max-lg:flex-col">
+                    <span class="opacity-85 mr-1">Email:</span>
+                    <span>email@website.com</span>
+                  </div>
+                  <div class="flex max-lg:flex-col">
+                    <span class="opacity-85 mr-1">Subscription:</span>
+                    <span>Monthly</span>
+                  </div>
+                </div>
+                <div class="toggle-cont">
+                  <input type="checkbox" id="Billing" />
+                  <label for="Billing" class="toggle"></label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-3 max-md:flex-wrap">
+            <div
+              class="flex flex-col bg-white rounded-lg p-4 max-md:w-full max-md:items-center"
+            >
+              <h1 class="text-3xl font-semibold mb-3">My Skills</h1>
+              <p class="font-semibold opacity-50">Complete Skills List</p>
+              <ul class="mt-4 max-md:w-full">
+                <li
+                  class="flex items-center mb-2 gap-5 lg:pr-24 pb-4 border-b-2 border-solid border-zinc-100 max-md:justify-center max-md:pr-0"
+                >
+                  <span class="bg-slate-200 py-2 px-3 tracking-wider rounded-lg"
+                    >HTML</span
+                  ><span
+                    class="bg-slate-200 py-2 px-3 tracking-wider rounded-lg"
+                    >Pugjs</span
+                  ><span
+                    class="bg-slate-200 py-2 px-3 tracking-wider rounded-lg"
+                    >HAML</span
+                  >
+                </li>
+                <li
+                  class="flex items-center mb-2 gap-5 lg:pr-24 pb-4 border-b-2 border-solid border-zinc-100 max-md:justify-center max-md:pr-0"
+                >
+                  <span class="bg-slate-200 py-2 px-3 tracking-wider rounded-lg"
+                    >CSS</span
+                  ><span
+                    class="bg-slate-200 py-2 px-3 tracking-wider rounded-lg"
+                    >SASS</span
+                  ><span
+                    class="bg-slate-200 py-2 px-3 tracking-wider rounded-lg"
+                    >Stylus</span
+                  >
+                </li>
+                <li
+                  class="flex items-center mb-2 gap-5 lg:pr-24 pb-4 border-b-2 border-solid border-zinc-100 max-md:justify-center max-md:pr-0"
+                >
+                  <span class="bg-slate-200 py-2 px-3 tracking-wider rounded-lg"
+                    >JavaScript</span
+                  ><span
+                    class="bg-slate-200 py-2 px-3 tracking-wider rounded-lg"
+                    >TypeScript</span
+                  >
+                </li>
+                <li
+                  class="flex items-center mb-2 gap-5 lg:pr-24 pb-4 border-b-2 border-solid border-zinc-100 max-md:justify-center max-md:pr-0"
+                >
+                  <span class="bg-slate-200 py-2 px-3 tracking-wider rounded-lg"
+                    >Vuejs</span
+                  ><span
+                    class="bg-slate-200 py-2 px-3 tracking-wider rounded-lg"
+                    >Reactjs</span
+                  >
+                </li>
+                <li
+                  class="flex items-center mb-2 gap-5 lg:pr-24 pb-4 border-b-2 border-solid border-zinc-100 max-md:justify-center max-md:pr-0"
+                >
+                  <span class="bg-slate-200 py-2 px-3 tracking-wider rounded-lg"
+                    >Jest</span
+                  ><span
+                    class="bg-slate-200 py-2 px-3 tracking-wider rounded-lg"
+                    >Jasmine</span
+                  >
+                </li>
+                <li
+                  class="flex items-center mb-2 gap-5 lg:pr-24 pb-4 border-b-2 border-solid border-zinc-100 max-md:justify-center max-md:pr-0"
+                >
+                  <span class="bg-slate-200 py-2 px-3 tracking-wider rounded-lg"
+                    >PHP</span
+                  ><span
+                    class="bg-slate-200 py-2 px-3 tracking-wider rounded-lg"
+                    >Laravel</span
+                  >
+                </li>
+                <li
+                  class="flex gap-5 mb-2 lg:pr-24 max-md:justify-center max-md:pr-0"
+                >
+                  <span class="bg-slate-200 py-2 px-3 tracking-wider rounded-lg"
+                    >Python</span
+                  ><span
+                    class="bg-slate-200 py-2 px-3 tracking-wider rounded-lg"
+                    >Django</span
+                  >
+                </li>
+              </ul>
+            </div>
+            <div
+              class="flex flex-col bg-white rounded-lg p-4 flex-1 max-md:items-center"
+            >
+              <h1 class="text-3xl font-semibold mb-3">Latest Activities</h1>
+              <p class="font-semibold opacity-50">
+                Latest Activities Done By The User
+              </p>
+              <div
+                class="flex justify-between mt-6 pb-4 border-b-2 border-solid border-zinc-100 max-md:w-full max-sm:flex-col max-sm:items-center max-sm:gap-5"
+              >
+                <div
+                  class="flex gap-5 flex-1 max-sm:flex-col max-sm:items-center"
+                >
+                  <img src="images/Profile/activity-01.png" class="w-14" />
+                  <div class="flex flex-col gap-3 max-sm:items-center">
+                    <h2 class="font-semibold">Store</h2>
+                    <p class="font-semibold opacity-60 max-sm:text-center">
+                      Bought The Mastering Python Course
+                    </p>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-3 items-end max-sm:items-center">
+                  <span class="font-semibold">18:10</span>
+                  <span class="font-semibold opacity-60">Yesterday</span>
+                </div>
+              </div>
+              <div
+                class="flex justify-between mt-6 pb-4 border-b-2 border-solid border-zinc-100 max-md:w-full max-sm:flex-col max-sm:items-center max-sm:gap-5"
+              >
+                <div
+                  class="flex gap-5 flex-1 max-sm:flex-col max-sm:items-center"
+                >
+                  <img src="images/Profile/activity-02.png" class="w-14" />
+                  <div class="flex flex-col gap-3 max-sm:items-center">
+                    <h2 class="font-semibold">Academy</h2>
+                    <p class="font-semibold opacity-60 max-sm:text-center">
+                      Got The PHP Certificate
+                    </p>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-3 items-end max-sm:items-center">
+                  <span class="font-semibold">16:05</span>
+                  <span class="font-semibold opacity-60">Yesterday</span>
+                </div>
+              </div>
+              <div
+                class="flex justify-between mt-6 pb-4 border-b-2 border-solid border-zinc-100 max-md:w-full max-sm:flex-col max-sm:items-center max-sm:gap-5"
+              >
+                <div
+                  class="flex gap-5 flex-1 max-sm:flex-col max-sm:items-center"
+                >
+                  <img src="images/Profile/activity-03.png" class="w-14" />
+                  <div class="flex flex-col gap-3 max-sm:items-center">
+                    <h2 class="font-semibold">Badges</h2>
+                    <p class="font-semibold opacity-60 max-sm:text-center">
+                      Unlocked The 10 Skills Badge
+                    </p>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-3 items-end max-sm:items-center">
+                  <span class="font-semibold">18:05</span>
+                  <span class="font-semibold opacity-60">Yesterday</span>
+                </div>
+              </div>
+              <div
+                class="flex justify-between mt-6 max-md:w-full max-sm:flex-col max-sm:items-center max-sm:gap-5"
+              >
+                <div
+                  class="flex gap-5 flex-1 max-sm:flex-col max-sm:items-center"
+                >
+                  <img src="images/Profile/activity-01.png" class="w-14" />
+                  <div class="flex flex-col gap-3 max-sm:items-center">
+                    <h2 class="font-semibold">Store</h2>
+                    <p class="font-semibold opacity-60 max-sm:text-center">
+                      Bought The Typescript Course
+                    </p>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-3 items-end max-sm:items-center">
+                  <span class="font-semibold">12:05</span>
+                  <span class="font-semibold opacity-60">Yesterday</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

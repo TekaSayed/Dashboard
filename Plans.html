@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GemStore | Settings</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <link rel="stylesheet" href="CSS/GemStore.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page flex m-0">
+      <aside class="relative py-6 px-3 bg-white w-1/6">
+        <h1 class="relative mb-6 pb-3 text-center text-xl font-bold h1-head">
+          <span>Gem</span
+          ><span class="text-3xl mx-1 mb-1 text-[var(--blue-color)]">S</span
+          ><span>tore</span>
+        </h1>
+        <ul class="flex flex-col gap-6">
+          <li>
+            <a href="Dashboard.html">
+              <i class="fa-regular fa-chart-bar"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="Settings.html">
+              <i class="fa-solid fa-gear"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+          <li>
+            <a href="Profile.html">
+              <i class="fa-regular fa-user"></i>
+              <span>Profile</span>
+            </a>
+          </li>
+          <li>
+            <a href="Projects.html">
+              <i class="fa-solid fa-diagram-project"></i>
+              <span>Projects</span>
+            </a>
+          </li>
+          <li>
+            <a href="Courses.html">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <span>Courses</span>
+            </a>
+          </li>
+          <li>
+            <a href="Friends.html">
+              <i class="fa-regular fa-circle-user"></i>
+              <span>Friends</span>
+            </a>
+          </li>
+          <li>
+            <a href="Files.html">
+              <i class="fa-regular fa-file"></i>
+              <span>Files</span>
+            </a>
+          </li>
+          <li class="active">
+            <a href="Plans.html">
+              <i class="fa-regular fa-credit-card"></i>
+              <span>Plans</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <div class="content w-full bg-slate-200 overflow-hidden">
+        <header
+          class="flex w-full bg-white justify-between items-center h-fit p-5"
+        >
+          <span class="search relative">
+            <input
+              type="text"
+              placeholder="Type A Keyword"
+              class="w-48 pl-8 py-2 rounded-lg max-md:w-36 max-md:placeholder:text-sm"
+            />
+          </span>
+          <div class="flex items-center relative">
+            <span class="icon mr-3 relative">
+              <i class="fa-regular fa-bell fa-xl"></i>
+            </span>
+            <img class="w-9" src="images/avatar.png" alt="avatar-img" />
+          </div>
+        </header>
+        <section class="p-2">
+          <h1 class="m-head">Plans</h1>
+          <div class="plan-grid">
+            <div class="bg-white p-4 flex flex-col gap-4 max-md:w-full">
+              <div
+                class="bg-[var(--green-color)] border-2 border-solid border-white outline outline-2 outline-[var(--green-color)] flex flex-col gap-2 items-center text-white p-5"
+              >
+                <h1 class="font-semibold text-3xl">Free</h1>
+                <span class="text-5xl mt-4"><sup class="mr-1">$</sup>0.00</span>
+              </div>
+              <ul class="flex flex-col">
+                <li
+                  class="relative pop-li pop-li-Check pl-7 py-4 flex items-center font-semibold border-b border-solid border-slate-200"
+                >
+                  Access All Text Lessons
+                </li>
+                <li
+                  class="relative pop-li pop-li-Check pl-7 py-4 flex items-center font-semibold border-b border-solid border-slate-200"
+                >
+                  Access All Videos Lessons
+                </li>
+                <li
+                  class="relative pop-li pop-li-Check pl-7 py-4 flex items-center font-semibold border-b border-solid border-slate-200"
+                >
+                  Appear On Leaderboard
+                </li>
+                <li
+                  class="relative pop-li pop-li-X pl-7 py-4 flex items-center font-semibold border-b border-solid border-slate-200"
+                >
+                  Browse Content Without Ads
+                </li>
+                <li
+                  class="relative pop-li pop-li-X pl-7 py-4 flex items-center font-semibold border-b border-solid border-slate-200"
+                >
+                  Access All Assignments
+                </li>
+                <li
+                  class="relative pop-li pop-li-X pl-7 py-4 flex items-center font-semibold border-b border-solid border-slate-200"
+                >
+                  Get Daily Prizes
+                </li>
+                <li
+                  class="relative pop-li pop-li-X pl-7 py-4 flex items-center font-semibold border-b border-solid border-slate-200"
+                >
+                  Earn Certificate
+                </li>
+                <li
+                  class="relative pop-li pop-li-X pl-7 py-4 flex items-center font-semibold border-b border-solid border-slate-200"
+                >
+                  1 GB Space For Hosting Files
+                </li>
+                <li
+                  class="relative pop-li pop-li-X pl-7 py-4 flex items-center font-semibold border-b border-solid border-slate-200"
+                >
+                  Access Badge System
+                </li>
+              </ul>
+              <span
+                class="text-white py-1 px-2 rounded-md w-fit font-bold bg-[var(--green-color)]"
+                >Join</span
+              >
+            </div>
+            <div class="bg-white p-4 flex flex-col gap-4">
+              <div
+                class="bg-[var(--blue-color)] border-2 border-solid border-white outline outline-2 outline-[var(--blue-color)] flex flex-col gap-2 items-center text-white p-5"
+              >
+                <h1 class="font-semibold text-3xl">Basic</h1>
+                <span class="text-5xl mt-4"><sup class="mr-1">$</sup>7.99</span>
+              </div>
+              <ul class="flex flex-col">
+                <li
+                  class="relative pop-li pop-li-Check pl-7 py-4 flex items-center font-semibold border-b border-solid border-slate-200"
+                >
+                  Access All Text Lessons
+                </li>
+                <li
+                  class="relative pop-li pop-li-Check pl-7 py-4 flex items-center font-semibold border-b border-solid border-slate-200"
+                >
+                  Access All Videos Lessons
+                </li>
+                <li
+                  class="relative pop-li pop-li-Check pl-7 py-4 flex items-center font-semibold border-b border-solid border-slate-200"
+                >
+                  Appear On Leaderboard
+                </li>
+                <li
+                  class="relative pop-li pop-li-Check pl-7 py-4 flex items-center font-semibold border-b border-solid border-slate-200"
+                >
+                  Browse Content Without Ads
+                </li>
+                <li
+                  class="relative pop-li pop-li-Check pl-7 py-4 flex items-center font-semibold border-b border-solid border-slate-200"
+                >
+                  Access All Assignments
+                </li>
+                <li
+                  class="relative pop-li pop-li-Check pl-7 py-4 flex items-center font-semibold border-b border-solid border-slate-200"
+                >
+                  Get Daily Prizes
+                </li>
+                <li
+                  class="relative pop-li pop-li-Check pl-7 py-4 flex items-center font-semibold border-b border-solid border-slate-200"
+                >
+                  Earn Certificate
+                </li>
+                <li
+                  class="relative pop-li pop-li-X pl-7 py-4 flex items-center font-semibold border-b border-solid border-slate-200"
+                >
+                  1 GB Space For Hosting Files
+                </li>
+                <li
+                  class="relative pop-li pop-li-X pl-7 py-4 flex items-center font-semibold border-b border-solid border-slate-200"
+                >
+                  Access Badge System
+                </li>
+              </ul>
+              <span
+                class="text-white py-1 px-2 rounded-md w-fit font-bold bg-[var(--blue-color)]"
+                >Join</span
+              >
+            </div>
+            <div class="bg-white p-4 flex flex-col gap-4">
+              <div
+                class="bg-[var(--orange-color)] border-2 border-solid border-white outline outline-2 outline-[var(--orange-color)] flex flex-col gap-2 items-center text-white p-5"
+              >
+                <h1 class="font-semibold text-3xl">Premium</h1>
+                <span class="text-5xl mt-4"
+                  ><sup class="mr-1">$</sup>19.99</span
+                >
+              </div>
+              <ul class="flex flex-col">
+                <li
+                  class="relative pop-li pop-li-Check pl-7 py-4 flex items-center font-semibold border-b border-solid border-slate-200"
+                >
+                  Access All Text Lessons
+                </li>
+                <li
+                  class="relative pop-li pop-li-Check pl-7 py-4 flex items-center font-semibold border-b border-solid border-slate-200"
+                >
+                  Access All Videos Lessons
+                </li>
+                <li
+                  class="relative pop-li pop-li-Check pl-7 py-4 flex items-center font-semibold border-b border-solid border-slate-200"
+                >
+                  Appear On Leaderboard
+                </li>
+                <li
+                  class="relative pop-li pop-li-Check pl-7 py-4 flex items-center font-semibold border-b border-solid border-slate-200"
+                >
+                  Browse Content Without Ads
+                </li>
+                <li
+                  class="relative pop-li pop-li-Check pl-7 py-4 flex items-center font-semibold border-b border-solid border-slate-200"
+                >
+                  Access All Assignments
+                </li>
+                <li
+                  class="relative pop-li pop-li-Check pl-7 py-4 flex items-center font-semibold border-b border-solid border-slate-200"
+                >
+                  Get Daily Prizes
+                </li>
+                <li
+                  class="relative pop-li pop-li-Check pl-7 py-4 flex items-center font-semibold border-b border-solid border-slate-200"
+                >
+                  Earn Certificate
+                </li>
+                <li
+                  class="relative pop-li pop-li-Check pl-7 py-4 flex items-center font-semibold border-b border-solid border-slate-200"
+                >
+                  1 GB Space For Hosting Files
+                </li>
+                <li
+                  class="relative pop-li pop-li-Check pl-7 py-4 flex items-center font-semibold border-b border-solid border-slate-200"
+                >
+                  Access Badge System
+                </li>
+              </ul>
+              <span
+                class="text-white py-1 px-2 rounded-md w-fit font-bold bg-[var(--orange-color)]"
+                >Join</span
+              >
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

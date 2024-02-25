@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GemStore | Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <link rel="stylesheet" href="CSS/GemStore.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page flex m-0">
+      <aside class="relative py-6 px-3 bg-white w-1/6">
+        <h1 class="relative mb-6 pb-3 text-center text-xl font-bold h1-head">
+          <span>Gem</span
+          ><span class="text-3xl mx-1 mb-1 text-[var(--blue-color)]">S</span
+          ><span>tore</span>
+        </h1>
+        <ul class="flex flex-col gap-6">
+          <li class="active">
+            <a href="Dashboard.html">
+              <i class="fa-regular fa-chart-bar"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="Settings.html">
+              <i class="fa-solid fa-gear"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+          <li>
+            <a href="Profile.html">
+              <i class="fa-regular fa-user"></i>
+              <span>Profile</span>
+            </a>
+          </li>
+          <li>
+            <a href="Projects.html">
+              <i class="fa-solid fa-diagram-project"></i>
+              <span>Projects</span>
+            </a>
+          </li>
+          <li>
+            <a href="Courses.html">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <span>Courses</span>
+            </a>
+          </li>
+          <li>
+            <a href="Friends.html">
+              <i class="fa-regular fa-circle-user"></i>
+              <span>Friends</span>
+            </a>
+          </li>
+          <li>
+            <a href="Files.html">
+              <i class="fa-regular fa-file"></i>
+              <span>Files</span>
+            </a>
+          </li>
+          <li>
+            <a href="Plans.html">
+              <i class="fa-regular fa-credit-card"></i>
+              <span>Plans</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <div class="content w-full bg-slate-200 overflow-hidden">
+        <header
+          class="flex w-full bg-white justify-between items-center h-fit p-5"
+        >
+          <span class="search relative">
+            <input
+              type="text"
+              placeholder="Type A Keyword"
+              class="w-48 pl-8 py-2 rounded-lg max-md:w-36 max-md:placeholder:text-sm"
+            />
+          </span>
+          <div class="flex items-center relative">
+            <span class="icon mr-3 relative">
+              <i class="fa-regular fa-bell fa-xl"></i>
+            </span>
+            <img class="w-9" src="images/avatar.png" alt="avatar-img" />
+          </div>
+        </header>
+        <section class="p-2">
+          <h1 class="m-head">Dashboard</h1>
+          <div class="gridy">
+            <div class="rounded-lg bg-white relative dash-high pb-32">
+              <div class="relative eee flex justify-between p-9 rounded-t-lg">
+                <img
+                  src="images/Dashboard/Welcome/avatar.png"
+                  alt=""
+                  class="w-avatar absolute w-14"
+                />
+                <div class="flex flex-col tracking-wide ml-4">
+                  <span class="text-2xl font-semibold mb-2">Welcome</span>
+                  <span class="text-lg text-gray-500 tracking-widest"
+                    >Elzero</span
+                  >
+                </div>
+                <img
+                  src="images/Dashboard/Welcome/welcome.png"
+                  alt=""
+                  class="w-60 welcome-img"
+                />
+              </div>
+              <div class="flex justify-around mt-12 py-4 b-block colom">
+                <div class="flex flex-col items-center mb-4">
+                  <span class="mb-3 text-xl">Osama Elzero</span>
+                  <span class="font-semibold opacity-50">Developer</span>
+                </div>
+                <div class="flex flex-col items-center mb-4">
+                  <span class="mb-3 text-xl">80</span>
+                  <span class="font-semibold opacity-50">Projects</span>
+                </div>
+                <div class="flex flex-col items-center mb-4">
+                  <span class="mb-3 text-xl">$8500</span>
+                  <span class="font-semibold opacity-50">Earned</span>
+                </div>
+              </div>
+              <div class="relative">
+                <a href="#" class="btn-b btn-b-ap">Profile</a>
+              </div>
+            </div>
+            <div class="rounded-lg bg-white relative dash-high px-5 py-8">
+              <div class="flex flex-col tracking-wide ml-4 mb-6">
+                <span class="text-2xl font-semibold mb-4">Quick Draft</span>
+                <span class="text-gray-500">Write A Draft For Your Ideas</span>
+              </div>
+              <form class="flex flex-col gap-5">
+                <input
+                  type="text"
+                  placeholder="Title"
+                  class="w-full eee p-3 rounded-md"
+                />
+                <textarea
+                  placeholder="Your Thought"
+                  class="w-full eee p-3 rounded-md h-[178px]"
+                ></textarea>
+                <div class="relative text-right mt-4 pb-5">
+                  <a href="#" class="btn-b">Save</a>
+                </div>
+              </form>
+            </div>
+            <div class="rounded-lg bg-white relative dash-high px-5 py-8">
+              <div class="flex flex-col tracking-wide ml-4 mb-6">
+                <span class="text-2xl font-semibold mb-4">Yearly Targets</span>
+                <span class="text-gray-500">Targets Of The Year</span>
+              </div>
+              <div class="flex flex-col gap-5">
+                <div class="flex gap-5 items-center">
+                  <div
+                    class="bg-blue-200 py-8 w-32 text-center max-md:py-4 max-md:w-24"
+                  >
+                    <i class="fa-solid fa-sack-dollar fa-2x text-blue-600"></i>
+                  </div>
+                  <div class="flex flex-col gap-3 w-full">
+                    <span class="block text-gray-500">Money</span>
+                    <span class="block font-bold -mt-2">$20,000</span>
+                    <span
+                      class="block w-full h-[3px] bg-gradient-to-r from-blue-600 from-80% to-blue-200 to-80% relative percentage percentage-num-80"
+                    ></span>
+                  </div>
+                </div>
+                <div class="flex gap-5 items-center">
+                  <div
+                    class="bg-orange-100 py-8 w-32 text-center max-md:py-4 max-md:w-24"
+                  >
+                    <i class="fa-solid fa-code fa-2x text-orange-400"></i>
+                  </div>
+                  <div class="flex flex-col gap-3 w-full">
+                    <span class="block text-gray-500">Projects</span>
+                    <span class="block font-bold -mt-2">25</span>
+                    <span
+                      class="block w-full h-[3px] bg-gradient-to-r from-orange-400 from-40% to-orange-100 to-40% relative percentage percentage-num-40"
+                    ></span>
+                  </div>
+                </div>
+                <div class="flex gap-5 items-center">
+                  <div
+                    class="bg-green-100 py-8 w-32 text-center max-md:py-4 max-md:w-24"
+                  >
+                    <i class="fa-solid fa-user fa-2x text-green-400"></i>
+                  </div>
+                  <div class="flex flex-col gap-3 w-full">
+                    <span class="block text-gray-500">Team</span>
+                    <span class="block font-bold -mt-2">12</span>
+                    <span
+                      class="block w-full h-[3px] bg-gradient-to-r from-green-400 from-75% to-green-100 to-75% relative percentage percentage-num-75"
+                    ></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rounded-lg bg-white relative dash-high px-5 py-8">
+              <div class="flex flex-col tracking-wide ml-4 mb-11">
+                <span class="text-2xl font-semibold mb-4"
+                  >Tickets Statistics</span
+                >
+                <span class="text-gray-500"
+                  >Everything About Support Tickets</span
+                >
+              </div>
+              <div class="flex flex-wrap gap-3">
+                <div
+                  class="flex flex-col gap-4 items-center py-6 rounded-md border-2 border-[#cccccc84] w-[48%] max-md:w-full"
+                >
+                  <div>
+                    <i
+                      class="fa-regular fa-rectangle-list fa-2x text-orange-400"
+                    ></i>
+                  </div>
+                  <span class="block font-bold">2500</span>
+                  <span class="block text-gray-500 -mt-2 text-xs">Total</span>
+                </div>
+                <div
+                  class="flex flex-col gap-4 items-center py-6 rounded-md border-2 border-[#cccccc84] w-[48%] max-md:w-full"
+                >
+                  <div>
+                    <i class="fa-solid fa-spinner fa-2x text-blue-600"></i>
+                  </div>
+                  <span class="block font-bold">500</span>
+                  <span class="block text-gray-500 -mt-2 text-xs">Pending</span>
+                </div>
+                <div
+                  class="flex flex-col gap-4 items-center py-6 rounded-md border-2 border-[#cccccc84] w-[48%] max-md:w-full"
+                >
+                  <div>
+                    <i
+                      class="fa-regular fa-circle-check fa-2x text-green-500"
+                    ></i>
+                  </div>
+                  <span class="block font-bold">1900</span>
+                  <span class="block text-gray-500 -mt-2 text-xs">Closed</span>
+                </div>
+                <div
+                  class="flex flex-col gap-4 items-center py-6 rounded-md border-2 border-[#cccccc84] w-[48%] max-md:w-full"
+                >
+                  <div>
+                    <i
+                      class="fa-regular fa-rectangle-xmark fa-2x text-red-400"
+                    ></i>
+                  </div>
+                  <span class="block font-bold">100</span>
+                  <span class="block text-gray-500 -mt-2 text-xs">Deleted</span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="rounded-lg bg-white relative dash-high px-5 py-8 flex flex-col gap-5"
+            >
+              <div class="flex flex-col tracking-wide">
+                <span class="text-2xl font-semibold">Latest News</span>
+              </div>
+              <div
+                class="w-full flex gap-4 border-b border-solid border-b-zinc-200 pb-5 max-md:flex-col max-md:items-center max-md:gap-8"
+              >
+                <img
+                  src="images/Dashboard/Latest News/news-01.png"
+                  alt=""
+                  class="w-28 rounded-lg"
+                />
+                <div
+                  class="flex w-full justify-between items-center max-md:flex-col max-md:gap-3"
+                >
+                  <div class="flex flex-col justify-center max-md:items-center">
+                    <h2 class="mb-3 font-bold">Created SASS Section</h2>
+                    <p class="text-sm opacity-70">
+                      New SASS Examples & Tutorials
+                    </p>
+                  </div>
+                  <span
+                    class="text-xs bg-zinc-100 py-2 w-28 text-center rounded-md font-semibold"
+                    >3 Days Ago</span
+                  >
+                </div>
+              </div>
+              <div
+                class="flex gap-4 border-b border-solid border-b-zinc-200 pb-5 max-md:flex-col max-md:items-center max-md:gap-8"
+              >
+                <img
+                  src="images/Dashboard/Latest News/news-02.png"
+                  alt=""
+                  class="w-28 rounded-lg"
+                />
+                <div
+                  class="flex w-full justify-between items-center max-md:flex-col max-md:gap-3"
+                >
+                  <div class="flex flex-col justify-center max-md:items-center">
+                    <h2 class="mb-3 font-bold">Changed The Design</h2>
+                    <p class="text-sm opacity-70">A Brand New Website Design</p>
+                  </div>
+                  <span
+                    class="text-xs bg-zinc-100 py-2 w-28 text-center rounded-md font-semibold"
+                    >5 Days Ago</span
+                  >
+                </div>
+              </div>
+              <div
+                class="flex gap-4 border-b border-solid border-b-zinc-200 pb-5 max-md:flex-col max-md:items-center max-md:gap-8"
+              >
+                <img
+                  src="images/Dashboard/Latest News/news-03.png"
+                  alt=""
+                  class="w-28 rounded-lg"
+                />
+                <div
+                  class="flex w-full justify-between items-center max-md:flex-col max-md:gap-3"
+                >
+                  <div class="flex flex-col justify-center max-md:items-center">
+                    <h2 class="mb-3 font-bold">Team Increased</h2>
+                    <p class="text-sm opacity-70">
+                      3 Developers Joined The Team
+                    </p>
+                  </div>
+                  <span
+                    class="text-xs bg-zinc-100 py-2 w-28 text-center rounded-md font-semibold"
+                    >7 Days Ago</span
+                  >
+                </div>
+              </div>
+              <div
+                class="flex gap-4 pb-5 max-md:flex-col max-md:items-center max-md:gap-8"
+              >
+                <img
+                  src="images/Dashboard/Latest News/news-04.png"
+                  alt=""
+                  class="w-28 rounded-lg"
+                />
+                <div
+                  class="flex w-full justify-between items-center max-md:flex-col max-md:gap-3"
+                >
+                  <div class="flex flex-col justify-center max-md:items-center">
+                    <h2 class="mb-3 font-bold">Added Payment Gateway</h2>
+                    <p class="text-sm opacity-70">
+                      Many New Payment Gateways Added
+                    </p>
+                  </div>
+                  <span
+                    class="text-xs bg-zinc-100 py-2 w-28 text-center rounded-md font-semibold"
+                    >9 Days Ago</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="rounded-lg bg-white relative dash-high px-5 py-8 flex flex-col gap-5"
+            >
+              <div class="flex flex-col tracking-wide">
+                <span class="text-2xl font-semibold">Latest Tasks</span>
+              </div>
+              <div
+                class="flex w-full justify-between items-center max-md:flex-col max-md:gap-3 border-b border-solid border-b-zinc-200 pb-2"
+              >
+                <div class="flex flex-col justify-center max-md:items-center">
+                  <h2 class="mb-3 font-bold">Record One New Video</h2>
+                  <p class="text-sm opacity-70">
+                    Record Python Create Exe Project
+                  </p>
+                </div>
+                <a href="">
+                  <i
+                    class="fa-regular fa-trash-can transition-colors duration-300 hover:text-[var(--red-color)]"
+                  ></i>
+                </a>
+              </div>
+              <div
+                class="flex w-full justify-between items-center max-md:flex-col max-md:gap-3 border-b border-solid border-b-zinc-200 pb-2"
+              >
+                <div class="flex flex-col justify-center max-md:items-center">
+                  <h2 class="mb-3 font-bold">Write Article</h2>
+                  <p class="text-sm opacity-70">
+                    Write Low Level vs High Level Languages
+                  </p>
+                </div>
+                <a href="">
+                  <i
+                    class="fa-regular fa-trash-can transition-colors duration-300 hover:text-[var(--red-color)]"
+                  ></i>
+                </a>
+              </div>
+              <div
+                class="flex w-full justify-between items-center max-md:flex-col max-md:gap-3 border-b border-solid border-b-zinc-200 pb-2"
+              >
+                <div class="flex flex-col justify-center max-md:items-center">
+                  <h2 class="mb-3 font-bold">Finish Project</h2>
+                  <p class="text-sm opacity-70">
+                    Publish Academy Programming Project
+                  </p>
+                </div>
+                <a href="">
+                  <i
+                    class="fa-regular fa-trash-can transition-colors duration-300 hover:text-[var(--red-color)]"
+                  ></i>
+                </a>
+              </div>
+              <div
+                class="flex w-full justify-between items-center max-md:flex-col max-md:gap-3 border-b border-solid border-b-zinc-200 pb-2 opacity-40"
+              >
+                <div class="flex flex-col justify-center max-md:items-center">
+                  <h2 class="mb-3 font-bold line-through">
+                    Attend The Meeting
+                  </h2>
+                  <p class="text-sm opacity-70 line-through">
+                    Attend The Project Business Analysis Meeting
+                  </p>
+                </div>
+                <a href="">
+                  <i
+                    class="fa-regular fa-trash-can transition-colors duration-300 hover:text-[var(--red-color)]"
+                  ></i>
+                </a>
+              </div>
+              <div
+                class="flex w-full justify-between items-center max-md:flex-col max-md:gap-3"
+              >
+                <div class="flex flex-col justify-center max-md:items-center">
+                  <h2 class="mb-3 font-bold">Finish Lesson</h2>
+                  <p class="text-sm opacity-70">Finish Teaching Flex Box</p>
+                </div>
+                <a href="">
+                  <i
+                    class="fa-regular fa-trash-can transition-colors duration-300 hover:text-[var(--red-color)]"
+                  ></i>
+                </a>
+              </div>
+            </div>
+            <div
+              class="rounded-lg bg-white relative dash-high px-5 py-9 flex flex-col gap-5"
+            >
+              <div class="flex flex-col tracking-wide">
+                <span class="text-2xl font-semibold">Top Search Items</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="opacity-70">Keyword</span>
+                <span class="opacity-70">Search Count</span>
+              </div>
+              <div class="flex flex-col gap-9">
+                <div class="flex justify-between">
+                  <span class="font-semibold">Programming</span>
+                  <span
+                    class="text-xs bg-zinc-100 py-1 px-2 text-center rounded-md font-semibold"
+                    >220</span
+                  >
+                </div>
+                <div class="flex justify-between">
+                  <span class="font-semibold">JavaScript</span>
+                  <span
+                    class="text-xs bg-zinc-100 py-1 px-2 text-center rounded-md font-semibold"
+                    >180</span
+                  >
+                </div>
+                <div class="flex justify-between">
+                  <span class="font-semibold">PHP</span>
+                  <span
+                    class="text-xs bg-zinc-100 py-1 px-2 text-center rounded-md font-semibold"
+                    >160</span
+                  >
+                </div>
+                <div class="flex justify-between">
+                  <span class="font-semibold">Code</span>
+                  <span
+                    class="text-xs bg-zinc-100 py-1 px-2 text-center rounded-md font-semibold"
+                    >145</span
+                  >
+                </div>
+                <div class="flex justify-between">
+                  <span class="font-semibold">Design</span>
+                  <span
+                    class="text-xs bg-zinc-100 py-1 px-2 text-center rounded-md font-semibold"
+                    >110</span
+                  >
+                </div>
+                <div class="flex justify-between">
+                  <span class="font-semibold">Logic</span>
+                  <span
+                    class="text-xs bg-zinc-100 py-1 px-2 text-center rounded-md font-semibold"
+                    >95</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="rounded-lg bg-white relative dash-high px-5 py-8 flex flex-col gap-3"
+            >
+              <div class="flex flex-col tracking-wide">
+                <span class="text-2xl font-semibold">Latest Uploads</span>
+              </div>
+              <div
+                class="flex gap-4 border-b border-solid border-b-zinc-200 pb-2"
+              >
+                <img src="SVG/Dashboard/pdf.svg" alt="" class="w-11" />
+                <div class="flex w-full justify-between items-center">
+                  <div class="flex flex-col">
+                    <span class="font-semibold">my-file.pdf</span>
+                    <span class="opacity-45 font-semibold">Elzero</span>
+                  </div>
+                  <span
+                    class="text-xs bg-zinc-100 py-2 px-3 text-center rounded-md font-semibold"
+                    >2.9mb</span
+                  >
+                </div>
+              </div>
+              <div
+                class="flex gap-4 border-b border-solid border-b-zinc-200 pb-2"
+              >
+                <img src="SVG/Dashboard/avi.svg" alt="" class="w-11" />
+                <div class="flex w-full justify-between items-center">
+                  <div class="flex flex-col">
+                    <span class="font-semibold">My-Video-File.avi</span>
+                    <span class="opacity-45 font-semibold">Admin</span>
+                  </div>
+                  <span
+                    class="text-xs bg-zinc-100 py-2 px-3 text-center rounded-md font-semibold"
+                    >4.9mb</span
+                  >
+                </div>
+              </div>
+              <div
+                class="flex gap-4 border-b border-solid border-b-zinc-200 pb-2"
+              >
+                <img src="SVG/Dashboard/psd.svg" alt="" class="w-11" />
+                <div class="flex w-full justify-between items-center">
+                  <div class="flex flex-col">
+                    <span class="font-semibold">My-Psd-File.pdf</span>
+                    <span class="opacity-45 font-semibold">Osama</span>
+                  </div>
+                  <span
+                    class="text-xs bg-zinc-100 py-2 px-3 text-center rounded-md font-semibold"
+                    >4.5mb</span
+                  >
+                </div>
+              </div>
+              <div
+                class="flex gap-4 border-b border-solid border-b-zinc-200 pb-2"
+              >
+                <img src="SVG/Dashboard/zip.svg" alt="" class="w-11" />
+                <div class="flex w-full justify-between items-center">
+                  <div class="flex flex-col">
+                    <span class="font-semibold">My-Zip-File.pdf</span>
+                    <span class="opacity-45 font-semibold">User</span>
+                  </div>
+                  <span
+                    class="text-xs bg-zinc-100 py-2 px-3 text-center rounded-md font-semibold"
+                    >8.9mb</span
+                  >
+                </div>
+              </div>
+              <div
+                class="flex gap-4 border-b border-solid border-b-zinc-200 pb-2"
+              >
+                <img src="SVG/Dashboard/dll.svg" alt="" class="w-11" />
+                <div class="flex w-full justify-between items-center">
+                  <div class="flex flex-col">
+                    <span class="font-semibold">My-DLL-File.pdf</span>
+                    <span class="opacity-45 font-semibold">Admin</span>
+                  </div>
+                  <span
+                    class="text-xs bg-zinc-100 py-2 px-3 text-center rounded-md font-semibold"
+                    >4.9mb</span
+                  >
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <img src="SVG/Dashboard/eps.svg" alt="" class="w-11" />
+                <div class="flex w-full justify-between items-center">
+                  <div class="flex flex-col">
+                    <span class="font-semibold">My-Eps-File.pdf</span>
+                    <span class="opacity-45 font-semibold">Designer</span>
+                  </div>
+                  <span
+                    class="text-xs bg-zinc-100 py-2 px-3 text-center rounded-md font-semibold"
+                    >8.9mb</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="rounded-lg bg-white relative dash-high px-5 py-8 flex flex-col gap-5"
+            >
+              <div class="flex flex-col tracking-wide">
+                <span class="text-2xl font-semibold"
+                  >Last Project Progress</span
+                >
+              </div>
+              <img
+                src="images/Dashboard/project.png"
+                alt=""
+                class="absolute w-1/4 bottom-7 right-5 opacity-15"
+              />
+              <ul
+                class="flex flex-col gap-6 pl-11 font-medium relative ball-line"
+              >
+                <li class="relative blue-ball">Got The Project</li>
+                <li class="relative blue-ball">Started The Project</li>
+                <li class="relative blue-ball">The Project About To Finish</li>
+                <li class="relative blue-ball blue-ball-flash">
+                  Test The Project
+                </li>
+                <li class="relative blue-ball-out">
+                  Finish The Project & Get Money
+                </li>
+              </ul>
+            </div>
+            <div
+              class="rounded-lg bg-white relative dash-high px-5 py-8 flex flex-col gap-5"
+            >
+              <div class="flex flex-col tracking-wide">
+                <span class="text-2xl font-semibold">Reminders</span>
+              </div>
+              <ul class="flex flex-col gap-3 pl-9">
+                <li
+                  class="flex flex-col gap-1 border-l-2 border-[var(--blue-alt-color)] border-solid pl-4 bally relative after:bg-[var(--blue-alt-color)]"
+                >
+                  <span class="font-bold">Check My Tasks List</span>
+                  <span class="text-xs opacity-80">28/09/2022 - 12:00am</span>
+                </li>
+                <li
+                  class="flex flex-col gap-1 border-l-2 border-[var(--green-color)] border-solid pl-4 bally relative after:bg-[var(--green-color)]"
+                >
+                  <span class="font-bold">Check My Projects</span>
+                  <span class="text-xs opacity-80">26/10/2022 - 12:00am</span>
+                </li>
+                <li
+                  class="flex flex-col gap-1 border-l-2 border-[var(--orange-color)] border-solid pl-4 bally relative after:bg-[var(--orange-color)]"
+                >
+                  <span class="font-bold">Call All My Clients</span>
+                  <span class="text-xs opacity-80">05/11/2022 - 12:00am</span>
+                </li>
+                <li
+                  class="flex flex-col gap-1 border-l-2 border-[var(--red-color)] border-solid pl-4 bally relative after:bg-[var(--red-color)]"
+                >
+                  <span class="font-bold">Finish The Development Workshop</span>
+                  <span class="text-xs opacity-80">20/12/2022 - 12:00am</span>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="rounded-lg bg-white relative dash-high px-5 py-8 flex flex-col gap-5 justify-between"
+            >
+              <div class="flex flex-col tracking-wide">
+                <span class="text-2xl font-semibold">Latest Post</span>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div
+                  class="flex gap-4 pb-6 border-b border-solid border-b-zinc-200"
+                >
+                  <img src="images/avatar.png" alt="" class="w-14 max-md:w-9" />
+                  <div class="flex flex-col gap-2">
+                    <span class="font-bold">Osama Elzero</span>
+                    <span class="opacity-65">About 3 Hours Ago</span>
+                  </div>
+                </div>
+                <p
+                  class="border-b border-solid border-b-zinc-200 pt-6 pb-16 mb-2 max-md:text-center"
+                >
+                  You Can Fool All Of The People Some Of The Time, And Some Of
+                  The People All Of The Time, But You Can't Fool All Of The
+                  People All Of The Time.
+                </p>
+                <div class="flex justify-between px-1 opacity-85">
+                  <div class="flex justify-center items-center gap-1">
+                    <i class="fa-regular fa-heart"></i>
+                    <span>1.8K</span>
+                  </div>
+                  <div class="flex justify-center items-center gap-1">
+                    <i class="fa-regular fa-comments"></i>
+                    <span>500</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="rounded-lg bg-white relative dash-high px-5 py-8 flex flex-col gap-5"
+            >
+              <div class="flex flex-col tracking-wide">
+                <span class="text-2xl font-semibold">Social Media Stats</span>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div
+                  class="flex justify-between pr-3 items-center bg-[#179cf033]"
+                >
+                  <div class="flex gap-4 items-center h-full">
+                    <span
+                      class="bg-[#179cf0] flex justify-center items-center w-16 h-16 hover:rotate-3 duration-300 max-md:w-20"
+                    >
+                      <i class="fa-brands fa-twitter fa-2x text-white"></i>
+                    </span>
+                    <span class="text-[#179cf0] font-semibold max-md:hidden"
+                      >90K Followers</span
+                    >
+                  </div>
+                  <a
+                    href=""
+                    class="py-1 px-4 bg-[#179cf0] text-white font-semibold rounded-md"
+                    >Follow</a
+                  >
+                </div>
+                <div
+                  class="flex justify-between pr-3 items-center bg-[#0866ff33]"
+                >
+                  <div class="flex gap-4 items-center h-full">
+                    <span
+                      class="bg-[#0866FF] flex justify-center items-center w-16 h-16 hover:rotate-3 duration-300 max-md:w-20"
+                    >
+                      <i class="fa-brands fa-facebook-f fa-2x text-white"></i>
+                    </span>
+                    <span class="text-[#0866FF] font-semibold max-md:hidden"
+                      >2M Like</span
+                    >
+                  </div>
+                  <a
+                    href=""
+                    class="py-1 px-4 bg-[#0866FF] text-white font-semibold rounded-md"
+                    >Like</a
+                  >
+                </div>
+                <div
+                  class="flex justify-between pr-3 items-center bg-[#ff000033]"
+                >
+                  <div class="flex gap-4 items-center h-full">
+                    <span
+                      class="bg-[#ff0000] flex justify-center items-center w-16 h-16 hover:rotate-3 duration-300 max-md:w-20"
+                    >
+                      <i class="fa-brands fa-youtube fa-2x text-white"></i>
+                    </span>
+                    <span class="text-[#ff0000] font-semibold max-md:hidden"
+                      >1M Subs</span
+                    >
+                  </div>
+                  <a
+                    href=""
+                    class="py-1 px-4 bg-[#ff0000] text-white font-semibold rounded-md"
+                    >Subscribe</a
+                  >
+                </div>
+                <div
+                  class="flex justify-between pr-3 items-center bg-[#0073b233]"
+                >
+                  <div class="flex gap-4 items-center h-full">
+                    <span
+                      class="bg-[#0073b2] flex justify-center items-center w-16 h-16 hover:rotate-3 duration-300 max-md:w-20"
+                    >
+                      <i class="fa-brands fa-linkedin-in fa-2x text-white"></i>
+                    </span>
+                    <span class="text-[#0073b2] font-semibold max-md:hidden"
+                      >70K Followers</span
+                    >
+                  </div>
+                  <a
+                    href=""
+                    class="py-1 px-4 bg-[#0073b2] text-white font-semibold rounded-md"
+                    >Follow</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-lg bg-white px-5 py-8 overflow-hidden">
+            <div class="racking-wide mb-4">
+              <span class="text-2xl font-semibold">Projects</span>
+            </div>
+            <div class="overflow-auto">
+              <table>
+                <thead>
+                  <tr class="bg-[#eee]">
+                    <th class="py-4">Name</th>
+                    <th class="py-4">Finish Date</th>
+                    <th class="py-4">Client</th>
+                    <th class="py-4">Price</th>
+                    <th class="py-4">Team</th>
+                    <th class="py-4">Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="hover:bg-zinc-50">
+                    <td>Ministry Wikipedia</td>
+                    <td>10 May 2022</td>
+                    <td>Ministry</td>
+                    <td>$5300</td>
+                    <td>
+                      <div class="flex relative">
+                        <img
+                          src="images/Projects/team-01.png"
+                          alt=""
+                          class="rounded-full z-0 w-8 border-[3px] border-solid border-white"
+                        />
+                        <img
+                          src="images/Projects/team-02.png"
+                          alt=""
+                          class="rounded-full z-10 left-[17%] w-8 border-[3px] border-solid border-white"
+                        />
+                        <img
+                          src="images/Projects/team-03.png"
+                          alt=""
+                          class="rounded-full z-20 left-[32%] w-8 border-[3px] border-solid border-white"
+                        />
+                        <img
+                          src="images/Projects/team-05.png"
+                          alt=""
+                          class="rounded-full z-30 left-[47%] w-8 border-[3px] border-solid border-white"
+                        />
+                      </div>
+                    </td>
+                    <td class="pl-6">
+                      <span
+                        class="rounded-md text-white px-3 py-1 text-xs font-semibold bg-[var(--orange-color)]"
+                        >Pending</span
+                      >
+                    </td>
+                  </tr>
+                  <tr class="hover:bg-zinc-50">
+                    <td>Elzero Shop</td>
+                    <td>12 Oct 2021</td>
+                    <td>Elzero Company</td>
+                    <td>$1500</td>
+                    <td>
+                      <div class="flex relative">
+                        <img
+                          src="images/Projects/team-01.png"
+                          alt=""
+                          class="rounded-full z-0 w-8 border-[3px] border-solid border-white"
+                        />
+                        <img
+                          src="images/Projects/team-02.png"
+                          alt=""
+                          class="rounded-full z-10 left-[17%] w-8 border-[3px] border-solid border-white"
+                        />
+                        <img
+                          src="images/Projects/team-05.png"
+                          alt=""
+                          class="rounded-full z-30 left-[32%] w-8 border-[3px] border-solid border-white"
+                        />
+                      </div>
+                    </td>
+                    <td class="pl-6">
+                      <span
+                        class="rounded-md text-white px-3 py-1 text-xs font-semibold bg-zinc-200"
+                        >In Progress</span
+                      >
+                    </td>
+                  </tr>
+                  <tr class="hover:bg-zinc-50">
+                    <td>Bouba App</td>
+                    <td>05 Sep 2021</td>
+                    <td>Bouba</td>
+                    <td>$800</td>
+                    <td>
+                      <div class="flex relative">
+                        <img
+                          src="images/Projects/team-02.png"
+                          alt=""
+                          class="rounded-full z-0 w-8 border-[3px] border-solid border-white"
+                        />
+                        <img
+                          src="images/Projects/team-03.png"
+                          alt=""
+                          class="rounded-full z-20 left-[17%] w-8 border-[3px] border-solid border-white"
+                        />
+                      </div>
+                    </td>
+                    <td class="pl-6">
+                      <span
+                        class="rounded-md text-white px-3 py-1 text-xs font-semibold bg-[var(--green-color)]"
+                        >Completed</span
+                      >
+                    </td>
+                  </tr>
+                  <tr class="hover:bg-zinc-50">
+                    <td>Mahmoud Website</td>
+                    <td>22 May 2021</td>
+                    <td>Mahmoud</td>
+                    <td>$600</td>
+                    <td>
+                      <div class="flex relative">
+                        <img
+                          src="images/Projects/team-01.png"
+                          alt=""
+                          class="rounded-full z-0 w-8 border-[3px] border-solid border-white"
+                        />
+                        <img
+                          src="images/Projects/team-02.png"
+                          alt=""
+                          class="rounded-full z-20 left-[17%] w-8 border-[3px] border-solid border-white"
+                        />
+                      </div>
+                    </td>
+                    <td class="pl-6">
+                      <span
+                        class="rounded-md text-white px-3 py-1 text-xs font-semibold bg-[var(--green-color)]"
+                        >Completed</span
+                      >
+                    </td>
+                  </tr>
+                  <tr class="hover:bg-zinc-50">
+                    <td>Sayed Website</td>
+                    <td>24 May 2021</td>
+                    <td>Sayed</td>
+                    <td>$300</td>
+                    <td>
+                      <div class="flex relative">
+                        <img
+                          src="images/Projects/team-01.png"
+                          alt=""
+                          class="rounded-full z-0 w-8 border-[3px] border-solid border-white"
+                        />
+                        <img
+                          src="images/Projects/team-03.png"
+                          alt=""
+                          class="rounded-full z-20 left-[17%] w-8 border-[3px] border-solid border-white"
+                        />
+                      </div>
+                    </td>
+                    <td class="pl-6">
+                      <span
+                        class="rounded-md text-white px-3 py-1 text-xs font-semibold bg-[var(--red-color)]"
+                        >Rejected</span
+                      >
+                    </td>
+                  </tr>
+                  <tr class="hover:bg-zinc-50">
+                    <td>Arena Application</td>
+                    <td>01 Mar 2021</td>
+                    <td>Arena Company</td>
+                    <td>$2600</td>
+                    <td>
+                      <div class="flex relative">
+                        <img
+                          src="images/Projects/team-01.png"
+                          alt=""
+                          class="rounded-full z-0 w-8 border-[3px] border-solid border-white"
+                        />
+                        <img
+                          src="images/Projects/team-02.png"
+                          alt=""
+                          class="rounded-full z-20 left-[17%] w-8 border-[3px] border-solid border-white"
+                        />
+                        <img
+                          src="images/Projects/team-03.png"
+                          alt=""
+                          class="rounded-full z-20 left-[32%] w-8 border-[3px] border-solid border-white"
+                        />
+                        <img
+                          src="images/Projects/team-04.png"
+                          alt=""
+                          class="rounded-full z-20 left-[47%] w-8 border-[3px] border-solid border-white"
+                        />
+                      </div>
+                    </td>
+                    <td class="pl-6">
+                      <span
+                        class="rounded-md text-white px-3 py-1 text-xs font-semibold bg-[var(--green-color)]"
+                        >Completed</span
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

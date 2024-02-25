@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GemStore | Settings</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <link rel="stylesheet" href="CSS/GemStore.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page flex m-0">
+      <aside class="relative py-6 px-3 bg-white w-1/6">
+        <h1 class="relative mb-6 pb-3 text-center text-xl font-bold h1-head">
+          <span>Gem</span
+          ><span class="text-3xl mx-1 mb-1 text-[var(--blue-color)]">S</span
+          ><span>tore</span>
+        </h1>
+        <ul class="flex flex-col gap-6">
+          <li>
+            <a href="Dashboard.html">
+              <i class="fa-regular fa-chart-bar"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li class="active">
+            <a href="Settings.html">
+              <i class="fa-solid fa-gear"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+          <li>
+            <a href="Profile.html">
+              <i class="fa-regular fa-user"></i>
+              <span>Profile</span>
+            </a>
+          </li>
+          <li>
+            <a href="Projects.html">
+              <i class="fa-solid fa-diagram-project"></i>
+              <span>Projects</span>
+            </a>
+          </li>
+          <li>
+            <a href="Courses.html">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <span>Courses</span>
+            </a>
+          </li>
+          <li>
+            <a href="Friends.html">
+              <i class="fa-regular fa-circle-user"></i>
+              <span>Friends</span>
+            </a>
+          </li>
+          <li>
+            <a href="Files.html">
+              <i class="fa-regular fa-file"></i>
+              <span>Files</span>
+            </a>
+          </li>
+          <li>
+            <a href="Plans.html">
+              <i class="fa-regular fa-credit-card"></i>
+              <span>Plans</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <div class="content w-full bg-slate-200 overflow-hidden">
+        <header
+          class="flex w-full bg-white justify-between items-center h-fit p-5"
+        >
+          <span class="search relative">
+            <input
+              type="text"
+              placeholder="Type A Keyword"
+              class="w-48 pl-8 py-2 rounded-lg max-md:w-36 max-md:placeholder:text-sm"
+            />
+          </span>
+          <div class="flex items-center relative">
+            <span class="icon mr-3 relative">
+              <i class="fa-regular fa-bell fa-xl"></i>
+            </span>
+            <img class="w-9" src="images/avatar.png" alt="avatar-img" />
+          </div>
+        </header>
+        <section class="p-2">
+          <h1 class="m-head">Settings</h1>
+          <div class="gridoy">
+            <div class="bg-white p-6 rounded-lg flex flex-col gap-5">
+              <h1 class="text-3xl font-semibold">Site Control</h1>
+              <p class="font-semibold opacity-50 -mt-3">
+                Control The Website If There Is Maintenance
+              </p>
+              <div class="flex justify-between items-center">
+                <div class="flex-1 flex flex-col gap-2">
+                  <h3 class="font-semibold">Website Control</h3>
+                  <p class="opacity-50">
+                    Open/Close Website And Type The Reason
+                  </p>
+                </div>
+                <div class="toggle-cont">
+                  <input type="checkbox" id="check-off" checked />
+                  <label for="check-off" class="toggle"></label>
+                </div>
+              </div>
+              <textarea
+                placeholder="Close Message Content"
+                class="resize-none rounded-lg border-2 border-solid p-2 h-full text-center font-semibold tracking-wider opacity-85"
+              ></textarea>
+            </div>
+            <div class="bg-white p-6 rounded-lg flex flex-col gap-5">
+              <h1 class="text-3xl font-semibold">General Info</h1>
+              <p class="font-semibold opacity-50 -mt-3">
+                General Information About Your Account
+              </p>
+              <form class="flex flex-col gap-4">
+                <div class="flex flex-col gap-2">
+                  <label for="F-Name" class="opacity-65">First Name</label>
+                  <input
+                    type="text"
+                    placeholder="First Name"
+                    id="F-Name"
+                    class="rounded-lg border-2 border-solid p-2"
+                  />
+                </div>
+                <div class="flex flex-col gap-2">
+                  <label for="L-Name" class="opacity-65">Last Name</label>
+                  <input
+                    type="text"
+                    placeholder="Last Name"
+                    id="L-Name"
+                    class="rounded-lg border-2 border-solid p-2"
+                  />
+                </div>
+                <div
+                  class="flex justify-between max-sm:flex-col max-sm:items-center"
+                >
+                  <div class="flex flex-col gap-2 flex-1">
+                    <label for="Email" class="opacity-65">Email</label>
+                    <input
+                      type="email"
+                      placeholder="o@nn.sa"
+                      id="Email"
+                      readonly
+                      class="rounded-lg border-2 border-solid p-2 bg-slate-200"
+                    />
+                  </div>
+                  <a
+                    href="#"
+                    class="flex items-center px-4 pt-6 text-[var(--blue-color)]"
+                    >Change</a
+                  >
+                </div>
+              </form>
+            </div>
+            <div class="bg-white p-6 rounded-lg flex flex-col gap-5">
+              <h1 class="text-3xl font-semibold">Security Info</h1>
+              <p class="font-semibold opacity-50 -mt-3">
+                Security Information About Your Account
+              </p>
+              <div
+                class="flex items-center pb-5 border-b-2 border-solid border-zinc-100"
+              >
+                <div class="flex-1">
+                  <h3 class="font-semibold">Website Control</h3>
+                  <p class="opacity-50">
+                    Open/Close Website And Type The Reason
+                  </p>
+                </div>
+                <div>
+                  <a href="#" class="btn-b">Change</a>
+                </div>
+              </div>
+              <div
+                class="flex justify-between items-center pb-5 border-b-2 border-solid border-zinc-100"
+              >
+                <div class="flex-1 flex flex-col gap-2">
+                  <h3 class="font-semibold">Two-Factor Authentication</h3>
+                  <p class="opacity-50">Enable/Disable The Feature</p>
+                </div>
+                <div class="toggle-cont">
+                  <input type="checkbox" id="Two-Factor" checked />
+                  <label for="Two-Factor" class="toggle"></label>
+                </div>
+              </div>
+              <div class="flex items-center">
+                <div class="flex-1">
+                  <h3 class="font-semibold">Devices</h3>
+                  <p class="opacity-50">Check The Login Devices List</p>
+                </div>
+                <div>
+                  <a
+                    href="#"
+                    class="font-bold rounded-lg py-2 px-3 bg-gray-200 text-black"
+                    >Devices</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="bg-white p-6 rounded-lg flex flex-col gap-5">
+              <h1 class="text-3xl font-semibold">Social Info</h1>
+              <p class="font-semibold opacity-50 -mt-3">
+                Social Media Information
+              </p>
+              <div class="flex chekys">
+                <input
+                  type="email"
+                  placeholder="Twitter Username"
+                  class="bg-gray-200 flex-1 pl-2 py-3 rounded-r-md border border-solid border-slate-400 border-l-transparent order-2"
+                />
+                <span
+                  class="bg-gray-200 p-3 rounded-l-md border border-solid border-slate-400 order-1 w-11"
+                >
+                  <i
+                    class="fa-brands fa-twitter opacity-35 duration-100 opax"
+                  ></i>
+                </span>
+              </div>
+              <div class="flex chekys">
+                <input
+                  type="email"
+                  placeholder="Twitter Username"
+                  class="bg-gray-200 flex-1 pl-2 py-3 rounded-r-md border border-solid border-slate-400 border-l-transparent order-2"
+                />
+                <span
+                  class="bg-gray-200 p-3 rounded-l-md border border-solid border-slate-400 order-1 w-11"
+                >
+                  <i
+                    class="fa-brands fa-facebook-f opacity-35 duration-100 opax"
+                  ></i>
+                </span>
+              </div>
+              <div class="flex chekys">
+                <input
+                  type="email"
+                  placeholder="Twitter Username"
+                  class="bg-gray-200 flex-1 pl-2 py-3 rounded-r-md border border-solid border-slate-400 border-l-transparent order-2"
+                />
+                <span
+                  class="bg-gray-200 p-3 rounded-l-md border border-solid border-slate-400 order-1 w-11"
+                >
+                  <i
+                    class="fa-brands fa-linkedin-in opacity-35 duration-100 opax"
+                  ></i>
+                </span>
+              </div>
+              <div class="flex chekys">
+                <input
+                  type="email"
+                  placeholder="Twitter Username"
+                  class="bg-gray-200 flex-1 pl-2 py-3 rounded-r-md border border-solid border-slate-400 border-l-transparent order-2"
+                />
+                <span
+                  class="bg-gray-200 p-3 rounded-l-md border border-solid border-slate-400 order-1 w-11"
+                >
+                  <i
+                    class="fa-brands fa-youtube opacity-35 duration-100 opax"
+                  ></i>
+                </span>
+              </div>
+            </div>
+            <div class="bg-white p-6 rounded-lg flex flex-col gap-5">
+              <h1 class="text-3xl font-semibold">Widgets Control</h1>
+              <p class="font-semibold opacity-50 -mt-3">Show/Hide Widgets</p>
+              <form class="flex flex-col gap-3">
+                <span class="flex relative conty">
+                  <input
+                    type="checkbox"
+                    id="Draft"
+                    class="mr-8 appearance-none outline-none"
+                    checked
+                  />
+                  <label
+                    for="Draft"
+                    class="cursor-pointer font-semibold control"
+                    >Quick Draft</label
+                  >
+                </span>
+                <span class="flex relative conty">
+                  <input
+                    type="checkbox"
+                    id="Targets"
+                    class="mr-8 appearance-none outline-none"
+                    checked
+                  />
+                  <label
+                    for="Targets"
+                    class="cursor-pointer font-semibold control"
+                    >Yearly Targets</label
+                  >
+                </span>
+                <span class="flex relative conty">
+                  <input
+                    type="checkbox"
+                    id="Statistics"
+                    class="mr-8 appearance-none outline-none"
+                    checked
+                  />
+                  <label
+                    for="Statistics"
+                    class="cursor-pointer font-semibold control"
+                    >Tickets Statistics</label
+                  >
+                </span>
+                <span class="flex relative conty">
+                  <input
+                    type="checkbox"
+                    id="Latest-News"
+                    class="mr-8 appearance-none outline-none"
+                    checked
+                  />
+                  <label
+                    for="Latest-News"
+                    class="cursor-pointer font-semibold control"
+                    >Latest News</label
+                  >
+                </span>
+                <span class="flex relative conty">
+                  <input
+                    type="checkbox"
+                    id="Latest-Tasks"
+                    class="mr-8 appearance-none outline-none"
+                  />
+                  <label
+                    for="Latest-Tasks"
+                    class="cursor-pointer font-semibold control"
+                    >Latest Tasks</label
+                  >
+                </span>
+                <span class="flex relative conty">
+                  <input
+                    type="checkbox"
+                    id="Top-Items"
+                    class="mr-8 appearance-none outline-none"
+                    checked
+                  />
+                  <label
+                    for="Top-Items"
+                    class="cursor-pointer font-semibold control"
+                    >Top Search Items</label
+                  >
+                </span>
+              </form>
+            </div>
+            <div class="bg-white p-6 rounded-lg flex flex-col gap-5">
+              <h1 class="text-3xl font-semibold">Backup Manager</h1>
+              <p class="font-semibold opacity-50 -mt-3">
+                Control Backup Time And Location
+              </p>
+              <form
+                class="flex flex-col gap-4 pb-5 border-b-2 border-solid border-zinc-100"
+              >
+                <span class="raadio">
+                  <input
+                    type="radio"
+                    name="manager"
+                    id="manager-1"
+                    class="appearance-none"
+                    checked
+                  />
+                  <label
+                    for="manager-1"
+                    class="font-semibold pl-7 cursor-pointer w-full radiio relative"
+                    >Daily</label
+                  >
+                </span>
+                <span class="raadio">
+                  <input
+                    type="radio"
+                    name="manager"
+                    id="manager-2"
+                    class="appearance-none"
+                  />
+                  <label
+                    for="manager-2"
+                    class="font-semibold pl-7 cursor-pointer w-full radiio relative"
+                    >Weekly</label
+                  >
+                </span>
+                <span class="raadio">
+                  <input
+                    type="radio"
+                    name="manager"
+                    id="manager-3"
+                    class="appearance-none"
+                  />
+                  <label
+                    for="manager-3"
+                    class="font-semibold pl-7 cursor-pointer w-full radiio relative"
+                    >Monthly</label
+                  >
+                </span>
+              </form>
+              <form class="flex gap-2 max-md:flex-col">
+                <span class="w-1/3 max-md:w-full squr-h">
+                  <input
+                    type="radio"
+                    name="zero"
+                    id="zero-1"
+                    class="appearance-none hidden"
+                  />
+                  <label
+                    for="zero-1"
+                    class="flex flex-col gap-6 justify-between items-center border-2 border-solid border-zinc-200 cursor-pointer py-4 rounded-lg w-full h-full"
+                  >
+                    <i class="fa-solid fa-server"></i>
+                    Megaman</label
+                  >
+                </span>
+                <span class="w-1/3 max-md:w-full squr-h">
+                  <input
+                    type="radio"
+                    name="zero"
+                    id="zero-2"
+                    class="appearance-none hidden"
+                    checked
+                  />
+                  <label
+                    for="zero-2"
+                    class="flex flex-col gap-6 justify-between items-center border-2 border-solid border-zinc-200 cursor-pointer py-4 rounded-lg w-full h-full"
+                  >
+                    <i class="fa-solid fa-server"></i>
+                    Zero</label
+                  >
+                </span>
+                <span class="w-1/3 max-md:w-full squr-h">
+                  <input
+                    type="radio"
+                    name="zero"
+                    id="zero-3"
+                    class="appearance-none hidden"
+                  />
+                  <label
+                    for="zero-3"
+                    class="flex flex-col gap-6 justify-between items-center border-2 border-solid border-zinc-200 cursor-pointer py-4 rounded-lg w-full h-full"
+                  >
+                    <i class="fa-solid fa-server"></i>
+                    Sigma</label
+                  >
+                </span>
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

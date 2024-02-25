@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GemStore | Settings</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <link rel="stylesheet" href="CSS/GemStore.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page flex m-0">
+      <aside class="relative py-6 px-3 bg-white w-1/6">
+        <h1 class="relative mb-6 pb-3 text-center text-xl font-bold h1-head">
+          <span>Gem</span
+          ><span class="text-3xl mx-1 mb-1 text-[var(--blue-color)]">S</span
+          ><span>tore</span>
+        </h1>
+        <ul class="flex flex-col gap-6">
+          <li>
+            <a href="Dashboard.html">
+              <i class="fa-regular fa-chart-bar"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="Settings.html">
+              <i class="fa-solid fa-gear"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+          <li>
+            <a href="Profile.html">
+              <i class="fa-regular fa-user"></i>
+              <span>Profile</span>
+            </a>
+          </li>
+          <li>
+            <a href="Projects.html">
+              <i class="fa-solid fa-diagram-project"></i>
+              <span>Projects</span>
+            </a>
+          </li>
+          <li>
+            <a href="Courses.html">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <span>Courses</span>
+            </a>
+          </li>
+          <li>
+            <a href="Friends.html">
+              <i class="fa-regular fa-circle-user"></i>
+              <span>Friends</span>
+            </a>
+          </li>
+          <li class="active">
+            <a href="Files.html">
+              <i class="fa-regular fa-file"></i>
+              <span>Files</span>
+            </a>
+          </li>
+          <li>
+            <a href="Plans.html">
+              <i class="fa-regular fa-credit-card"></i>
+              <span>Plans</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <div class="content w-full bg-slate-200 overflow-hidden">
+        <header
+          class="flex w-full bg-white justify-between items-center h-fit p-5"
+        >
+          <span class="search relative">
+            <input
+              type="text"
+              placeholder="Type A Keyword"
+              class="w-48 pl-8 py-2 rounded-lg max-md:w-36 max-md:placeholder:text-sm"
+            />
+          </span>
+          <div class="flex items-center relative">
+            <span class="icon mr-3 relative">
+              <i class="fa-regular fa-bell fa-xl"></i>
+            </span>
+            <img class="w-9" src="images/avatar.png" alt="avatar-img" />
+          </div>
+        </header>
+        <section class="p-2">
+          <h1 class="m-head">Files</h1>
+          <div class="flex gap-4 max-md:flex-wrap">
+            <div
+              class="bg-white rounded-lg order-2 w-[300px] max-md:w-full max-md:order-none p-6 pt-0 flex flex-col gap-3 h-fit"
+            >
+              <h1 class="m-head after:hidden text-2xl pl-0 pb-3">
+                Files Statistics
+              </h1>
+              <div
+                class="pl-2 flex justify-between items-center border border-solid border-slate-300 rounded-md p-3"
+              >
+                <div class="flex gap-2">
+                  <span
+                    class="flex justify-center items-center bg-[#0075ff33] p-4"
+                  >
+                    <i
+                      class="fa-regular fa-file-pdf text-[var(--blue-color)]"
+                    ></i>
+                  </span>
+                  <div class="flex flex-col gap-1">
+                    <span class="font-bold">PDF Files</span>
+                    <span class="font-semibold opacity-55">130 Files</span>
+                  </div>
+                </div>
+                <span class="font-semibold opacity-55">6.5GB</span>
+              </div>
+              <div
+                class="pl-2 flex justify-between items-center border border-solid border-slate-300 rounded-md p-3"
+              >
+                <div class="flex gap-2">
+                  <span
+                    class="flex justify-center items-center bg-[#21c45d33] p-4"
+                  >
+                    <i
+                      class="fa-regular fa-images text-[var(--green-color)]"
+                    ></i>
+                  </span>
+                  <div class="flex flex-col gap-1">
+                    <span class="font-bold">Images</span>
+                    <span class="font-semibold opacity-55">115 Files</span>
+                  </div>
+                </div>
+                <span class="font-semibold opacity-55">3.5GB</span>
+              </div>
+              <div
+                class="pl-2 flex justify-between items-center border border-solid border-slate-300 rounded-md p-3"
+              >
+                <div class="flex gap-2">
+                  <span
+                    class="flex justify-center items-center bg-[#f4403433] p-4"
+                  >
+                    <i
+                      class="fa-regular fa-file-word text-[var(--red-color)]"
+                    ></i>
+                  </span>
+                  <div class="flex flex-col gap-1">
+                    <span class="font-bold">Word Files </span>
+                    <span class="font-semibold opacity-55">110 Files</span>
+                  </div>
+                </div>
+                <span class="font-semibold opacity-55">3.2GB</span>
+              </div>
+              <div
+                class="pl-2 flex justify-between items-center border border-solid border-slate-300 rounded-md p-3"
+              >
+                <div class="flex gap-2">
+                  <span
+                    class="flex justify-center items-center bg-[#f59f0a33] p-4"
+                  >
+                    <i
+                      class="fa-solid fa-file-csv text-[var(--orange-color)]"
+                    ></i>
+                  </span>
+                  <div class="flex flex-col gap-1">
+                    <span class="font-bold">CSV Files </span>
+                    <span class="font-semibold opacity-55">99 Files</span>
+                  </div>
+                </div>
+                <span class="font-semibold opacity-55">2.9GB</span>
+              </div>
+              <a
+                href="#"
+                class="flex gap-1 items-center text-white rounded-lg bg-[var(--blue-color)] m-auto hover:bg-[var(--blue-alt-color)] duration-300 go-up"
+              >
+                <i class="fa-solid fa-angles-up p-3"></i>
+                <span class="border-l border-solid border-white p-3"
+                  >Upload</span
+                >
+              </a>
+            </div>
+            <div
+              class="flex-1 fil-grid order-1 max-md:w-full max-md:order-none"
+            >
+              <div class="bg-white rounded-lg h-fit">
+                <div
+                  class="flex flex-col gap-3 justify-center items-center h-[180px] relative group"
+                >
+                  <span class="absolute left-2 top-2 opacity-55">
+                    <i class="fa-solid fa-download"></i>
+                  </span>
+                  <img
+                    src="SVG/Dashboard/pdf.svg"
+                    class="w-16 duration-300 group-hover:rotate-6"
+                  />
+                  <span class="font-semibold">my-file.pdf</span>
+                  <span class="absolute left-2 bottom-2 opacity-85">
+                    Elzero
+                  </span>
+                </div>
+                <div
+                  class="flex justify-between m-2 pt-2 opacity-60 text-sm border-t border-solid border-slate-300"
+                >
+                  <span>20/06/2020</span>
+                  <span>5.5MB</span>
+                </div>
+              </div>
+              <div class="bg-white rounded-lg h-fit">
+                <div
+                  class="flex flex-col gap-3 justify-center items-center h-[180px] relative group"
+                >
+                  <span class="absolute left-2 top-2 opacity-55">
+                    <i class="fa-solid fa-download"></i>
+                  </span>
+                  <img
+                    src="SVG/Dashboard/avi.svg"
+                    class="w-16 duration-300 group-hover:rotate-6"
+                  />
+                  <span class="font-semibold">my-file.avi </span>
+                  <span class="absolute left-2 bottom-2 opacity-85">
+                    Admin
+                  </span>
+                </div>
+                <div
+                  class="flex justify-between m-2 pt-2 opacity-60 text-sm border-t border-solid border-slate-300"
+                >
+                  <span>16/5/2021 </span>
+                  <span>12.5MB </span>
+                </div>
+              </div>
+              <div class="bg-white rounded-lg h-fit">
+                <div
+                  class="flex flex-col gap-3 justify-center items-center h-[180px] relative group"
+                >
+                  <span class="absolute left-2 top-2 opacity-55">
+                    <i class="fa-solid fa-download"></i>
+                  </span>
+                  <img
+                    src="SVG/Dashboard/eps.svg"
+                    class="w-16 duration-300 group-hover:rotate-6"
+                  />
+                  <span class="font-semibold">my-file.eps </span>
+                  <span class="absolute left-2 bottom-2 opacity-85">
+                    Uploader
+                  </span>
+                </div>
+                <div
+                  class="flex justify-between m-2 pt-2 opacity-60 text-sm border-t border-solid border-slate-300"
+                >
+                  <span>16/5/2021 </span>
+                  <span>2.7MB </span>
+                </div>
+              </div>
+              <div class="bg-white rounded-lg h-fit">
+                <div
+                  class="flex flex-col gap-3 justify-center items-center h-[180px] relative group"
+                >
+                  <span class="absolute left-2 top-2 opacity-55">
+                    <i class="fa-solid fa-download"></i>
+                  </span>
+                  <img
+                    src="SVG/Dashboard/psd.svg"
+                    class="w-16 duration-300 group-hover:rotate-6"
+                  />
+                  <span class="font-semibold">my-file.psd </span>
+                  <span class="absolute left-2 bottom-2 opacity-85">
+                    Osama
+                  </span>
+                </div>
+                <div
+                  class="flex justify-between m-2 pt-2 opacity-60 text-sm border-t border-solid border-slate-300"
+                >
+                  <span>16/5/2021 </span>
+                  <span>15.1MB </span>
+                </div>
+              </div>
+              <div class="bg-white rounded-lg h-fit">
+                <div
+                  class="flex flex-col gap-3 justify-center items-center h-[180px] relative group"
+                >
+                  <span class="absolute left-2 top-2 opacity-55">
+                    <i class="fa-solid fa-download"></i>
+                  </span>
+                  <img
+                    src="SVG/Dashboard/dll.svg"
+                    class="w-16 duration-300 group-hover:rotate-6"
+                  />
+                  <span class="font-semibold">my-file.dll </span>
+                  <span class="absolute left-2 bottom-2 opacity-85">
+                    Coder
+                  </span>
+                </div>
+                <div
+                  class="flex justify-between m-2 pt-2 opacity-60 text-sm border-t border-solid border-slate-300"
+                >
+                  <span>16/5/2021 </span>
+                  <span>2.2MB </span>
+                </div>
+              </div>
+              <div class="bg-white rounded-lg h-fit">
+                <div
+                  class="flex flex-col gap-3 justify-center items-center h-[180px] relative group"
+                >
+                  <span class="absolute left-2 top-2 opacity-55">
+                    <i class="fa-solid fa-download"></i>
+                  </span>
+                  <img
+                    src="SVG/Dashboard/png.svg"
+                    class="w-16 duration-300 group-hover:rotate-6"
+                  />
+                  <span class="font-semibold">my-file.png </span>
+                  <span class="absolute left-2 bottom-2 opacity-85">
+                    Designer
+                  </span>
+                </div>
+                <div
+                  class="flex justify-between m-2 pt-2 opacity-60 text-sm border-t border-solid border-slate-300"
+                >
+                  <span>16/5/2021 </span>
+                  <span>1.1MB </span>
+                </div>
+              </div>
+              <div class="bg-white rounded-lg h-fit">
+                <div
+                  class="flex flex-col gap-3 justify-center items-center h-[180px] relative group"
+                >
+                  <span class="absolute left-2 top-2 opacity-55">
+                    <i class="fa-solid fa-download"></i>
+                  </span>
+                  <img
+                    src="SVG/Dashboard/dll.svg"
+                    class="w-16 duration-300 group-hover:rotate-6"
+                  />
+                  <span class="font-semibold">my-file.dll </span>
+                  <span class="absolute left-2 bottom-2 opacity-85">
+                    Coder
+                  </span>
+                </div>
+                <div
+                  class="flex justify-between m-2 pt-2 opacity-60 text-sm border-t border-solid border-slate-300"
+                >
+                  <span>16/5/2021 </span>
+                  <span>2.2MB </span>
+                </div>
+              </div>
+              <div class="bg-white rounded-lg h-fit">
+                <div
+                  class="flex flex-col gap-3 justify-center items-center h-[180px] relative group"
+                >
+                  <span class="absolute left-2 top-2 opacity-55">
+                    <i class="fa-solid fa-download"></i>
+                  </span>
+                  <img
+                    src="SVG/Dashboard/png.svg"
+                    class="w-16 duration-300 group-hover:rotate-6"
+                  />
+                  <span class="font-semibold">my-file.png </span>
+                  <span class="absolute left-2 bottom-2 opacity-85">
+                    Designer
+                  </span>
+                </div>
+                <div
+                  class="flex justify-between m-2 pt-2 opacity-60 text-sm border-t border-solid border-slate-300"
+                >
+                  <span>16/5/2021 </span>
+                  <span>1.1MB </span>
+                </div>
+              </div>
+              <div class="bg-white rounded-lg h-fit">
+                <div
+                  class="flex flex-col gap-3 justify-center items-center h-[180px] relative group"
+                >
+                  <span class="absolute left-2 top-2 opacity-55">
+                    <i class="fa-solid fa-download"></i>
+                  </span>
+                  <img
+                    src="SVG/Dashboard/psd.svg"
+                    class="w-16 duration-300 group-hover:rotate-6"
+                  />
+                  <span class="font-semibold">my-file.psd </span>
+                  <span class="absolute left-2 bottom-2 opacity-85">
+                    Osama
+                  </span>
+                </div>
+                <div
+                  class="flex justify-between m-2 pt-2 opacity-60 text-sm border-t border-solid border-slate-300"
+                >
+                  <span>16/5/2021 </span>
+                  <span>15.1MB </span>
+                </div>
+              </div>
+              <div class="bg-white rounded-lg h-fit">
+                <div
+                  class="flex flex-col gap-3 justify-center items-center h-[180px] relative group"
+                >
+                  <span class="absolute left-2 top-2 opacity-55">
+                    <i class="fa-solid fa-download"></i>
+                  </span>
+                  <img
+                    src="SVG/Dashboard/pdf.svg"
+                    class="w-16 duration-300 group-hover:rotate-6"
+                  />
+                  <span class="font-semibold">my-file.pdf</span>
+                  <span class="absolute left-2 bottom-2 opacity-85">
+                    Elzero
+                  </span>
+                </div>
+                <div
+                  class="flex justify-between m-2 pt-2 opacity-60 text-sm border-t border-solid border-slate-300"
+                >
+                  <span>20/06/2020</span>
+                  <span>5.5MB</span>
+                </div>
+              </div>
+              <div class="bg-white rounded-lg h-fit">
+                <div
+                  class="flex flex-col gap-3 justify-center items-center h-[180px] relative group"
+                >
+                  <span class="absolute left-2 top-2 opacity-55">
+                    <i class="fa-solid fa-download"></i>
+                  </span>
+                  <img
+                    src="SVG/Dashboard/avi.svg"
+                    class="w-16 duration-300 group-hover:rotate-6"
+                  />
+                  <span class="font-semibold">my-file.avi </span>
+                  <span class="absolute left-2 bottom-2 opacity-85">
+                    Admin
+                  </span>
+                </div>
+                <div
+                  class="flex justify-between m-2 pt-2 opacity-60 text-sm border-t border-solid border-slate-300"
+                >
+                  <span>16/5/2021 </span>
+                  <span>12.5MB </span>
+                </div>
+              </div>
+              <div class="bg-white rounded-lg h-fit">
+                <div
+                  class="flex flex-col gap-3 justify-center items-center h-[180px] relative group"
+                >
+                  <span class="absolute left-2 top-2 opacity-55">
+                    <i class="fa-solid fa-download"></i>
+                  </span>
+                  <img
+                    src="SVG/Dashboard/eps.svg"
+                    class="w-16 duration-300 group-hover:rotate-6"
+                  />
+                  <span class="font-semibold">my-file.eps </span>
+                  <span class="absolute left-2 bottom-2 opacity-85">
+                    Uploader
+                  </span>
+                </div>
+                <div
+                  class="flex justify-between m-2 pt-2 opacity-60 text-sm border-t border-solid border-slate-300"
+                >
+                  <span>16/5/2021 </span>
+                  <span>2.7MB </span>
+                </div>
+              </div>
+              <div class="bg-white rounded-lg h-fit">
+                <div
+                  class="flex flex-col gap-3 justify-center items-center h-[180px] relative group"
+                >
+                  <span class="absolute left-2 top-2 opacity-55">
+                    <i class="fa-solid fa-download"></i>
+                  </span>
+                  <img
+                    src="SVG/Dashboard/pdf.svg"
+                    class="w-16 duration-300 group-hover:rotate-6"
+                  />
+                  <span class="font-semibold">my-file.pdf</span>
+                  <span class="absolute left-2 bottom-2 opacity-85">
+                    Elzero
+                  </span>
+                </div>
+                <div
+                  class="flex justify-between m-2 pt-2 opacity-60 text-sm border-t border-solid border-slate-300"
+                >
+                  <span>20/06/2020</span>
+                  <span>5.5MB</span>
+                </div>
+              </div>
+              <div class="bg-white rounded-lg h-fit">
+                <div
+                  class="flex flex-col gap-3 justify-center items-center h-[180px] relative group"
+                >
+                  <span class="absolute left-2 top-2 opacity-55">
+                    <i class="fa-solid fa-download"></i>
+                  </span>
+                  <img
+                    src="SVG/Dashboard/avi.svg"
+                    class="w-16 duration-300 group-hover:rotate-6"
+                  />
+                  <span class="font-semibold">my-file.avi </span>
+                  <span class="absolute left-2 bottom-2 opacity-85">
+                    Admin
+                  </span>
+                </div>
+                <div
+                  class="flex justify-between m-2 pt-2 opacity-60 text-sm border-t border-solid border-slate-300"
+                >
+                  <span>16/5/2021 </span>
+                  <span>12.5MB </span>
+                </div>
+              </div>
+              <div class="bg-white rounded-lg h-fit">
+                <div
+                  class="flex flex-col gap-3 justify-center items-center h-[180px] relative group"
+                >
+                  <span class="absolute left-2 top-2 opacity-55">
+                    <i class="fa-solid fa-download"></i>
+                  </span>
+                  <img
+                    src="SVG/Dashboard/eps.svg"
+                    class="w-16 duration-300 group-hover:rotate-6"
+                  />
+                  <span class="font-semibold">my-file.eps </span>
+                  <span class="absolute left-2 bottom-2 opacity-85">
+                    Uploader
+                  </span>
+                </div>
+                <div
+                  class="flex justify-between m-2 pt-2 opacity-60 text-sm border-t border-solid border-slate-300"
+                >
+                  <span>16/5/2021 </span>
+                  <span>2.7MB </span>
+                </div>
+              </div>
+              <div class="bg-white rounded-lg h-fit">
+                <div
+                  class="flex flex-col gap-3 justify-center items-center h-[180px] relative group"
+                >
+                  <span class="absolute left-2 top-2 opacity-55">
+                    <i class="fa-solid fa-download"></i>
+                  </span>
+                  <img
+                    src="SVG/Dashboard/psd.svg"
+                    class="w-16 duration-300 group-hover:rotate-6"
+                  />
+                  <span class="font-semibold">my-file.psd </span>
+                  <span class="absolute left-2 bottom-2 opacity-85">
+                    Osama
+                  </span>
+                </div>
+                <div
+                  class="flex justify-between m-2 pt-2 opacity-60 text-sm border-t border-solid border-slate-300"
+                >
+                  <span>16/5/2021 </span>
+                  <span>15.1MB </span>
+                </div>
+              </div>
+              <div class="bg-white rounded-lg h-fit">
+                <div
+                  class="flex flex-col gap-3 justify-center items-center h-[180px] relative group"
+                >
+                  <span class="absolute left-2 top-2 opacity-55">
+                    <i class="fa-solid fa-download"></i>
+                  </span>
+                  <img
+                    src="SVG/Dashboard/dll.svg"
+                    class="w-16 duration-300 group-hover:rotate-6"
+                  />
+                  <span class="font-semibold">my-file.dll </span>
+                  <span class="absolute left-2 bottom-2 opacity-85">
+                    Coder
+                  </span>
+                </div>
+                <div
+                  class="flex justify-between m-2 pt-2 opacity-60 text-sm border-t border-solid border-slate-300"
+                >
+                  <span>16/5/2021 </span>
+                  <span>2.2MB </span>
+                </div>
+              </div>
+              <div class="bg-white rounded-lg h-fit">
+                <div
+                  class="flex flex-col gap-3 justify-center items-center h-[180px] relative group"
+                >
+                  <span class="absolute left-2 top-2 opacity-55">
+                    <i class="fa-solid fa-download"></i>
+                  </span>
+                  <img
+                    src="SVG/Dashboard/png.svg"
+                    class="w-16 duration-300 group-hover:rotate-6"
+                  />
+                  <span class="font-semibold">my-file.png </span>
+                  <span class="absolute left-2 bottom-2 opacity-85">
+                    Designer
+                  </span>
+                </div>
+                <div
+                  class="flex justify-between m-2 pt-2 opacity-60 text-sm border-t border-solid border-slate-300"
+                >
+                  <span>16/5/2021 </span>
+                  <span>1.1MB </span>
+                </div>
+              </div>
+              <div class="bg-white rounded-lg h-fit">
+                <div
+                  class="flex flex-col gap-3 justify-center items-center h-[180px] relative group"
+                >
+                  <span class="absolute left-2 top-2 opacity-55">
+                    <i class="fa-solid fa-download"></i>
+                  </span>
+                  <img
+                    src="SVG/Dashboard/dll.svg"
+                    class="w-16 duration-300 group-hover:rotate-6"
+                  />
+                  <span class="font-semibold">my-file.dll </span>
+                  <span class="absolute left-2 bottom-2 opacity-85">
+                    Coder
+                  </span>
+                </div>
+                <div
+                  class="flex justify-between m-2 pt-2 opacity-60 text-sm border-t border-solid border-slate-300"
+                >
+                  <span>16/5/2021 </span>
+                  <span>2.2MB </span>
+                </div>
+              </div>
+              <div class="bg-white rounded-lg h-fit">
+                <div
+                  class="flex flex-col gap-3 justify-center items-center h-[180px] relative group"
+                >
+                  <span class="absolute left-2 top-2 opacity-55">
+                    <i class="fa-solid fa-download"></i>
+                  </span>
+                  <img
+                    src="SVG/Dashboard/png.svg"
+                    class="w-16 duration-300 group-hover:rotate-6"
+                  />
+                  <span class="font-semibold">my-file.png </span>
+                  <span class="absolute left-2 bottom-2 opacity-85">
+                    Designer
+                  </span>
+                </div>
+                <div
+                  class="flex justify-between m-2 pt-2 opacity-60 text-sm border-t border-solid border-slate-300"
+                >
+                  <span>16/5/2021 </span>
+                  <span>1.1MB </span>
+                </div>
+              </div>
+              <div class="bg-white rounded-lg h-fit">
+                <div
+                  class="flex flex-col gap-3 justify-center items-center h-[180px] relative group"
+                >
+                  <span class="absolute left-2 top-2 opacity-55">
+                    <i class="fa-solid fa-download"></i>
+                  </span>
+                  <img
+                    src="SVG/Dashboard/psd.svg"
+                    class="w-16 duration-300 group-hover:rotate-6"
+                  />
+                  <span class="font-semibold">my-file.psd </span>
+                  <span class="absolute left-2 bottom-2 opacity-85">
+                    Osama
+                  </span>
+                </div>
+                <div
+                  class="flex justify-between m-2 pt-2 opacity-60 text-sm border-t border-solid border-slate-300"
+                >
+                  <span>16/5/2021 </span>
+                  <span>15.1MB </span>
+                </div>
+              </div>
+              <div class="bg-white rounded-lg h-fit">
+                <div
+                  class="flex flex-col gap-3 justify-center items-center h-[180px] relative group"
+                >
+                  <span class="absolute left-2 top-2 opacity-55">
+                    <i class="fa-solid fa-download"></i>
+                  </span>
+                  <img
+                    src="SVG/Dashboard/pdf.svg"
+                    class="w-16 duration-300 group-hover:rotate-6"
+                  />
+                  <span class="font-semibold">my-file.pdf</span>
+                  <span class="absolute left-2 bottom-2 opacity-85">
+                    Elzero
+                  </span>
+                </div>
+                <div
+                  class="flex justify-between m-2 pt-2 opacity-60 text-sm border-t border-solid border-slate-300"
+                >
+                  <span>20/06/2020</span>
+                  <span>5.5MB</span>
+                </div>
+              </div>
+              <div class="bg-white rounded-lg h-fit">
+                <div
+                  class="flex flex-col gap-3 justify-center items-center h-[180px] relative group"
+                >
+                  <span class="absolute left-2 top-2 opacity-55">
+                    <i class="fa-solid fa-download"></i>
+                  </span>
+                  <img
+                    src="SVG/Dashboard/avi.svg"
+                    class="w-16 duration-300 group-hover:rotate-6"
+                  />
+                  <span class="font-semibold">my-file.avi </span>
+                  <span class="absolute left-2 bottom-2 opacity-85">
+                    Admin
+                  </span>
+                </div>
+                <div
+                  class="flex justify-between m-2 pt-2 opacity-60 text-sm border-t border-solid border-slate-300"
+                >
+                  <span>16/5/2021 </span>
+                  <span>12.5MB </span>
+                </div>
+              </div>
+              <div class="bg-white rounded-lg h-fit">
+                <div
+                  class="flex flex-col gap-3 justify-center items-center h-[180px] relative group"
+                >
+                  <span class="absolute left-2 top-2 opacity-55">
+                    <i class="fa-solid fa-download"></i>
+                  </span>
+                  <img
+                    src="SVG/Dashboard/eps.svg"
+                    class="w-16 duration-300 group-hover:rotate-6"
+                  />
+                  <span class="font-semibold">my-file.eps </span>
+                  <span class="absolute left-2 bottom-2 opacity-85">
+                    Uploader
+                  </span>
+                </div>
+                <div
+                  class="flex justify-between m-2 pt-2 opacity-60 text-sm border-t border-solid border-slate-300"
+                >
+                  <span>16/5/2021 </span>
+                  <span>2.7MB </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

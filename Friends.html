@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GemStore | Friends</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <link rel="stylesheet" href="CSS/GemStore.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page flex m-0">
+      <aside class="relative py-6 px-3 bg-white w-1/6">
+        <h1 class="relative mb-6 pb-3 text-center text-xl font-bold h1-head">
+          <span>Gem</span
+          ><span class="text-3xl mx-1 mb-1 text-[var(--blue-color)]">S</span
+          ><span>tore</span>
+        </h1>
+        <ul class="flex flex-col gap-6">
+          <li>
+            <a href="Dashboard.html">
+              <i class="fa-regular fa-chart-bar"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="Settings.html">
+              <i class="fa-solid fa-gear"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+          <li>
+            <a href="Profile.html">
+              <i class="fa-regular fa-user"></i>
+              <span>Profile</span>
+            </a>
+          </li>
+          <li>
+            <a href="Projects.html">
+              <i class="fa-solid fa-diagram-project"></i>
+              <span>Projects</span>
+            </a>
+          </li>
+          <li>
+            <a href="Courses.html">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <span>Courses</span>
+            </a>
+          </li>
+          <li class="active">
+            <a href="Friends.html">
+              <i class="fa-regular fa-circle-user"></i>
+              <span>Friends</span>
+            </a>
+          </li>
+          <li>
+            <a href="Files.html">
+              <i class="fa-regular fa-file"></i>
+              <span>Files</span>
+            </a>
+          </li>
+          <li>
+            <a href="Plans.html">
+              <i class="fa-regular fa-credit-card"></i>
+              <span>Plans</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <div class="content w-full bg-slate-200 overflow-hidden">
+        <header
+          class="flex w-full bg-white justify-between items-center h-fit p-5"
+        >
+          <span class="search relative">
+            <input
+              type="text"
+              placeholder="Type A Keyword"
+              class="w-48 pl-8 py-2 rounded-lg max-md:w-36 max-md:placeholder:text-sm"
+            />
+          </span>
+          <div class="flex items-center relative">
+            <span class="icon mr-3 relative">
+              <i class="fa-regular fa-bell fa-xl"></i>
+            </span>
+            <img class="w-9" src="images/avatar.png" alt="avatar-img" />
+          </div>
+        </header>
+        <section class="p-2">
+          <h1 class="m-head">Friends</h1>
+          <div class="cours-grid">
+            <div
+              class="flex flex-col bg-white items-center px-4 py-5 rounded-md"
+            >
+              <div
+                class="flex flex-col gap-2 items-center pb-5 mb-4 border-b border-solid w-full relative"
+              >
+                <div class="absolute top-0 -left-3 flex">
+                  <i
+                    class="fa-solid fa-phone text-sm bg-zinc-200 w-8 h-8 rounded-full text-center ml-2 opacity-75 flex justify-center items-center hover:bg-[var(--blue-color)] hover:text-white hover:opacity-100 cursor-pointer duration-200"
+                  ></i>
+                  <i
+                    class="fa-regular fa-envelope text-sm bg-zinc-200 w-8 h-8 rounded-full text-center ml-2 opacity-75 flex justify-center items-center hover:bg-[var(--blue-color)] hover:text-white hover:opacity-100 cursor-pointer duration-200"
+                  ></i>
+                </div>
+                <span>
+                  <img
+                    src="images/Friends/friend-01.jpg"
+                    class="w-24 rounded-full"
+                  />
+                </span>
+                <h1 class="font-bold">Ahmed Nasser</h1>
+                <p class="opacity-70 text-sm">JavaScript Developer</p>
+              </div>
+              <div
+                class="flex flex-col w-full font-semibold gap-3 text-sm pb-5 mb-4 border-b border-solid relative"
+              >
+                <div class="flex gap-4 items-center">
+                  <i class="fa-regular fa-face-smile"></i>
+                  <span>99 Friend</span>
+                </div>
+                <div class="flex gap-3 items-center">
+                  <i class="fa-solid fa-code-commit"></i>
+                  <span>15 Projects</span>
+                </div>
+                <div class="flex gap-4 items-center">
+                  <i class="fa-regular fa-newspaper"></i>
+                  <span>25 Articles</span>
+                </div>
+                <span
+                  class="absolute top-1/2 translate-y-[-60%] right-0 text-[var(--orange-color)] tracking-[3px] text-6xl opacity-20"
+                  >VIP</span
+                >
+              </div>
+              <div class="flex justify-between items-center w-full">
+                <span class="text-xs opacity-80">Joined 02/10/2021</span>
+                <div class="text-sm flex gap-1">
+                  <a
+                    href="Profile.html"
+                    class="text-white px-2 py-0.5 rounded-[4px] bg-[var(--blue-color)] hover:bg-[var(--blue-alt-color)]"
+                    >Profile</a
+                  >
+                  <a
+                    href="#"
+                    class="text-white px-2 py-0.5 rounded-[4px] bg-[var(--red-color)] hover:bg-[#d93529]"
+                    >Remove</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col bg-white items-center px-4 py-5 rounded-md"
+            >
+              <div
+                class="flex flex-col gap-2 items-center pb-5 mb-4 border-b border-solid w-full relative"
+              >
+                <div class="absolute top-0 -left-3 flex">
+                  <i
+                    class="fa-solid fa-phone text-sm bg-zinc-200 w-8 h-8 rounded-full text-center ml-2 opacity-75 flex justify-center items-center hover:bg-[var(--blue-color)] hover:text-white hover:opacity-100 cursor-pointer duration-200"
+                  ></i>
+                  <i
+                    class="fa-regular fa-envelope text-sm bg-zinc-200 w-8 h-8 rounded-full text-center ml-2 opacity-75 flex justify-center items-center hover:bg-[var(--blue-color)] hover:text-white hover:opacity-100 cursor-pointer duration-200"
+                  ></i>
+                </div>
+                <span>
+                  <img
+                    src="images/Friends/friend-02.jpg"
+                    class="w-24 rounded-full"
+                  />
+                </span>
+                <h1 class="font-bold">Omar Fathy</h1>
+                <p class="opacity-70 text-sm">Cloud Developer</p>
+              </div>
+              <div
+                class="flex flex-col w-full font-semibold gap-3 text-sm pb-5 mb-4 border-b border-solid"
+              >
+                <div class="flex gap-4 items-center">
+                  <i class="fa-regular fa-face-smile"></i>
+                  <span>30 Friend</span>
+                </div>
+                <div class="flex gap-3 items-center">
+                  <i class="fa-solid fa-code-commit"></i>
+                  <span>11 Projects</span>
+                </div>
+                <div class="flex gap-4 items-center">
+                  <i class="fa-regular fa-newspaper"></i>
+                  <span>12 Articles</span>
+                </div>
+              </div>
+              <div class="flex justify-between items-center w-full">
+                <span class="text-xs opacity-80">Joined 02/08/2020 </span>
+                <div class="text-sm flex gap-1">
+                  <a
+                    href="Profile.html"
+                    class="text-white px-2 py-0.5 rounded-[4px] bg-[var(--blue-color)] hover:bg-[var(--blue-alt-color)]"
+                    >Profile</a
+                  >
+                  <a
+                    href="#"
+                    class="text-white px-2 py-0.5 rounded-[4px] bg-[var(--red-color)] hover:bg-[#d93529]"
+                    >Remove</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col bg-white items-center px-4 py-5 rounded-md"
+            >
+              <div
+                class="flex flex-col gap-2 items-center pb-5 mb-4 border-b border-solid w-full relative"
+              >
+                <div class="absolute top-0 -left-3 flex">
+                  <i
+                    class="fa-solid fa-phone text-sm bg-zinc-200 w-8 h-8 rounded-full text-center ml-2 opacity-75 flex justify-center items-center hover:bg-[var(--blue-color)] hover:text-white hover:opacity-100 cursor-pointer duration-200"
+                  ></i>
+                  <i
+                    class="fa-regular fa-envelope text-sm bg-zinc-200 w-8 h-8 rounded-full text-center ml-2 opacity-75 flex justify-center items-center hover:bg-[var(--blue-color)] hover:text-white hover:opacity-100 cursor-pointer duration-200"
+                  ></i>
+                </div>
+                <span>
+                  <img
+                    src="images/Friends/friend-03.jpg"
+                    class="w-24 rounded-full"
+                  />
+                </span>
+                <h1 class="font-bold">Omar Ahmed</h1>
+                <p class="opacity-70 text-sm">Mobile Developer</p>
+              </div>
+              <div
+                class="flex flex-col w-full font-semibold gap-3 text-sm pb-5 mb-4 border-b border-solid"
+              >
+                <div class="flex gap-4 items-center">
+                  <i class="fa-regular fa-face-smile"></i>
+                  <span>80 Friend</span>
+                </div>
+                <div class="flex gap-3 items-center">
+                  <i class="fa-solid fa-code-commit"></i>
+                  <span>20 Projects</span>
+                </div>
+                <div class="flex gap-4 items-center">
+                  <i class="fa-regular fa-newspaper"></i>
+                  <span>18 Articles</span>
+                </div>
+              </div>
+              <div class="flex justify-between items-center w-full">
+                <span class="text-xs opacity-80">Joined 02/06/2020 </span>
+                <div class="text-sm flex gap-1">
+                  <a
+                    href="Profile.html"
+                    class="text-white px-2 py-0.5 rounded-[4px] bg-[var(--blue-color)] hover:bg-[var(--blue-alt-color)]"
+                    >Profile</a
+                  >
+                  <a
+                    href="#"
+                    class="text-white px-2 py-0.5 rounded-[4px] bg-[var(--red-color)] hover:bg-[#d93529]"
+                    >Remove</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col bg-white items-center px-4 py-5 rounded-md"
+            >
+              <div
+                class="flex flex-col gap-2 items-center pb-5 mb-4 border-b border-solid w-full relative"
+              >
+                <div class="absolute top-0 -left-3 flex">
+                  <i
+                    class="fa-solid fa-phone text-sm bg-zinc-200 w-8 h-8 rounded-full text-center ml-2 opacity-75 flex justify-center items-center hover:bg-[var(--blue-color)] hover:text-white hover:opacity-100 cursor-pointer duration-200"
+                  ></i>
+                  <i
+                    class="fa-regular fa-envelope text-sm bg-zinc-200 w-8 h-8 rounded-full text-center ml-2 opacity-75 flex justify-center items-center hover:bg-[var(--blue-color)] hover:text-white hover:opacity-100 cursor-pointer duration-200"
+                  ></i>
+                </div>
+                <span>
+                  <img
+                    src="images/Friends/friend-04.jpg"
+                    class="w-24 rounded-full"
+                  />
+                </span>
+                <h1 class="font-bold">Shady Nabil</h1>
+                <p class="opacity-70 text-sm">Back-End Developer</p>
+              </div>
+              <div
+                class="flex flex-col w-full font-semibold gap-3 text-sm pb-5 mb-4 border-b border-solid"
+              >
+                <div class="flex gap-4 items-center">
+                  <i class="fa-regular fa-face-smile"></i>
+                  <span>70 Friend</span>
+                </div>
+                <div class="flex gap-3 items-center">
+                  <i class="fa-solid fa-code-commit"></i>
+                  <span>30 Projects</span>
+                </div>
+                <div class="flex gap-4 items-center">
+                  <i class="fa-regular fa-newspaper"></i>
+                  <span>18 Articles</span>
+                </div>
+              </div>
+              <div class="flex justify-between items-center w-full">
+                <span class="text-xs opacity-80">Joined 28/06/2020 </span>
+                <div class="text-sm flex gap-1">
+                  <a
+                    href="Profile.html"
+                    class="text-white px-2 py-0.5 rounded-[4px] bg-[var(--blue-color)] hover:bg-[var(--blue-alt-color)]"
+                    >Profile</a
+                  >
+                  <a
+                    href="#"
+                    class="text-white px-2 py-0.5 rounded-[4px] bg-[var(--red-color)] hover:bg-[#d93529]"
+                    >Remove</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col bg-white items-center px-4 py-5 rounded-md"
+            >
+              <div
+                class="flex flex-col gap-2 items-center pb-5 mb-4 border-b border-solid w-full relative"
+              >
+                <div class="absolute top-0 -left-3 flex">
+                  <i
+                    class="fa-solid fa-phone text-sm bg-zinc-200 w-8 h-8 rounded-full text-center ml-2 opacity-75 flex justify-center items-center hover:bg-[var(--blue-color)] hover:text-white hover:opacity-100 cursor-pointer duration-200"
+                  ></i>
+                  <i
+                    class="fa-regular fa-envelope text-sm bg-zinc-200 w-8 h-8 rounded-full text-center ml-2 opacity-75 flex justify-center items-center hover:bg-[var(--blue-color)] hover:text-white hover:opacity-100 cursor-pointer duration-200"
+                  ></i>
+                </div>
+                <span>
+                  <img
+                    src="images/Friends/friend-05.jpg"
+                    class="w-24 rounded-full"
+                  />
+                </span>
+                <h1 class="font-bold">Mohamed Ibrahim</h1>
+                <p class="opacity-70 text-sm">Algorithm Developer</p>
+              </div>
+              <div
+                class="flex flex-col w-full font-semibold gap-3 text-sm pb-5 mb-4 border-b border-solid"
+              >
+                <div class="flex gap-4 items-center">
+                  <i class="fa-regular fa-face-smile"></i>
+                  <span>70 Friend</span>
+                </div>
+                <div class="flex gap-3 items-center">
+                  <i class="fa-solid fa-code-commit"></i>
+                  <span>30 Projects</span>
+                </div>
+                <div class="flex gap-4 items-center">
+                  <i class="fa-regular fa-newspaper"></i>
+                  <span>18 Articles</span>
+                </div>
+              </div>
+              <div class="flex justify-between items-center w-full">
+                <span class="text-xs opacity-80">Joined 28/08/2020 </span>
+                <div class="text-sm flex gap-1">
+                  <a
+                    href="Profile.html"
+                    class="text-white px-2 py-0.5 rounded-[4px] bg-[var(--blue-color)] hover:bg-[var(--blue-alt-color)]"
+                    >Profile</a
+                  >
+                  <a
+                    href="#"
+                    class="text-white px-2 py-0.5 rounded-[4px] bg-[var(--red-color)] hover:bg-[#d93529]"
+                    >Remove</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col bg-white items-center px-4 py-5 rounded-md"
+            >
+              <div
+                class="flex flex-col gap-2 items-center pb-5 mb-4 border-b border-solid w-full relative"
+              >
+                <div class="absolute top-0 -left-3 flex">
+                  <i
+                    class="fa-solid fa-phone text-sm bg-zinc-200 w-8 h-8 rounded-full text-center ml-2 opacity-75 flex justify-center items-center hover:bg-[var(--blue-color)] hover:text-white hover:opacity-100 cursor-pointer duration-200"
+                  ></i>
+                  <i
+                    class="fa-regular fa-envelope text-sm bg-zinc-200 w-8 h-8 rounded-full text-center ml-2 opacity-75 flex justify-center items-center hover:bg-[var(--blue-color)] hover:text-white hover:opacity-100 cursor-pointer duration-200"
+                  ></i>
+                </div>
+                <span>
+                  <img
+                    src="images/Friends/friend-04.jpg"
+                    class="w-24 rounded-full"
+                  />
+                </span>
+                <h1 class="font-bold">Amr Hendawy</h1>
+                <p class="opacity-70 text-sm">Back-End Developer</p>
+              </div>
+              <div
+                class="flex flex-col w-full font-semibold gap-3 text-sm pb-5 mb-4 border-b border-solid"
+              >
+                <div class="flex gap-4 items-center">
+                  <i class="fa-regular fa-face-smile"></i>
+                  <span>70 Friend</span>
+                </div>
+                <div class="flex gap-3 items-center">
+                  <i class="fa-solid fa-code-commit"></i>
+                  <span>30 Projects</span>
+                </div>
+                <div class="flex gap-4 items-center">
+                  <i class="fa-regular fa-newspaper"></i>
+                  <span>18 Articles</span>
+                </div>
+              </div>
+              <div class="flex justify-between items-center w-full">
+                <span class="text-xs opacity-80">Joined 28/06/2020</span>
+                <div class="text-sm flex gap-1">
+                  <a
+                    href="Profile.html"
+                    class="text-white px-2 py-0.5 rounded-[4px] bg-[var(--blue-color)] hover:bg-[var(--blue-alt-color)]"
+                    >Profile</a
+                  >
+                  <a
+                    href="#"
+                    class="text-white px-2 py-0.5 rounded-[4px] bg-[var(--red-color)] hover:bg-[#d93529]"
+                    >Remove</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col bg-white items-center px-4 py-5 rounded-md"
+            >
+              <div
+                class="flex flex-col gap-2 items-center pb-5 mb-4 border-b border-solid w-full relative"
+              >
+                <div class="absolute top-0 -left-3 flex">
+                  <i
+                    class="fa-solid fa-phone text-sm bg-zinc-200 w-8 h-8 rounded-full text-center ml-2 opacity-75 flex justify-center items-center hover:bg-[var(--blue-color)] hover:text-white hover:opacity-100 cursor-pointer duration-200"
+                  ></i>
+                  <i
+                    class="fa-regular fa-envelope text-sm bg-zinc-200 w-8 h-8 rounded-full text-center ml-2 opacity-75 flex justify-center items-center hover:bg-[var(--blue-color)] hover:text-white hover:opacity-100 cursor-pointer duration-200"
+                  ></i>
+                </div>
+                <span>
+                  <img
+                    src="images/Friends/friend-02.jpg"
+                    class="w-24 rounded-full"
+                  />
+                </span>
+                <h1 class="font-bold">Mahmoud Adel</h1>
+                <p class="opacity-70 text-sm">Cloud Developer</p>
+              </div>
+              <div
+                class="flex flex-col w-full font-semibold gap-3 text-sm pb-5 mb-4 border-b border-solid"
+              >
+                <div class="flex gap-4 items-center">
+                  <i class="fa-regular fa-face-smile"></i>
+                  <span>30 Friend</span>
+                </div>
+                <div class="flex gap-3 items-center">
+                  <i class="fa-solid fa-code-commit"></i>
+                  <span>11 Projects</span>
+                </div>
+                <div class="flex gap-4 items-center">
+                  <i class="fa-regular fa-newspaper"></i>
+                  <span>12 Articles</span>
+                </div>
+              </div>
+              <div class="flex justify-between items-center w-full">
+                <span class="text-xs opacity-80">Joined 02/08/2020 </span>
+                <div class="text-sm flex gap-1">
+                  <a
+                    href="Profile.html"
+                    class="text-white px-2 py-0.5 rounded-[4px] bg-[var(--blue-color)] hover:bg-[var(--blue-alt-color)]"
+                    >Profile</a
+                  >
+                  <a
+                    href="#"
+                    class="text-white px-2 py-0.5 rounded-[4px] bg-[var(--red-color)] hover:bg-[#d93529]"
+                    >Remove</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col bg-white items-center px-4 py-5 rounded-md"
+            >
+              <div
+                class="flex flex-col gap-2 items-center pb-5 mb-4 border-b border-solid w-full relative"
+              >
+                <div class="absolute top-0 -left-3 flex">
+                  <i
+                    class="fa-solid fa-phone text-sm bg-zinc-200 w-8 h-8 rounded-full text-center ml-2 opacity-75 flex justify-center items-center hover:bg-[var(--blue-color)] hover:text-white hover:opacity-100 cursor-pointer duration-200"
+                  ></i>
+                  <i
+                    class="fa-regular fa-envelope text-sm bg-zinc-200 w-8 h-8 rounded-full text-center ml-2 opacity-75 flex justify-center items-center hover:bg-[var(--blue-color)] hover:text-white hover:opacity-100 cursor-pointer duration-200"
+                  ></i>
+                </div>
+                <span>
+                  <img
+                    src="images/Friends/friend-05.jpg"
+                    class="w-24 rounded-full"
+                  />
+                </span>
+                <h1 class="font-bold">Ahmed Abuzaid</h1>
+                <p class="opacity-70 text-sm">Content Creator</p>
+              </div>
+              <div
+                class="flex flex-col w-full font-semibold gap-3 text-sm pb-5 mb-4 border-b border-solid relative"
+              >
+                <div class="flex gap-4 items-center">
+                  <i class="fa-regular fa-face-smile"></i>
+                  <span>85 Friend</span>
+                </div>
+                <div class="flex gap-3 items-center">
+                  <i class="fa-solid fa-code-commit"></i>
+                  <span>35 Projects</span>
+                </div>
+                <div class="flex gap-4 items-center">
+                  <i class="fa-regular fa-newspaper"></i>
+                  <span>20 Articles</span>
+                </div>
+                <span
+                  class="absolute top-1/2 translate-y-[-60%] right-0 text-[var(--orange-color)] tracking-[3px] text-6xl opacity-20"
+                  >VIP</span
+                >
+              </div>
+              <div class="flex justify-between items-center w-full">
+                <span class="text-xs opacity-80">Joined 28/08/2020 </span>
+                <div class="text-sm flex gap-1">
+                  <a
+                    href="Profile.html"
+                    class="text-white px-2 py-0.5 rounded-[4px] bg-[var(--blue-color)] hover:bg-[var(--blue-alt-color)]"
+                    >Profile</a
+                  >
+                  <a
+                    href="#"
+                    class="text-white px-2 py-0.5 rounded-[4px] bg-[var(--red-color)] hover:bg-[#d93529]"
+                    >Remove</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col bg-white items-center px-4 py-5 rounded-md"
+            >
+              <div
+                class="flex flex-col gap-2 items-center pb-5 mb-4 border-b border-solid w-full relative"
+              >
+                <div class="absolute top-0 -left-3 flex">
+                  <i
+                    class="fa-solid fa-phone text-sm bg-zinc-200 w-8 h-8 rounded-full text-center ml-2 opacity-75 flex justify-center items-center hover:bg-[var(--blue-color)] hover:text-white hover:opacity-100 cursor-pointer duration-200"
+                  ></i>
+                  <i
+                    class="fa-regular fa-envelope text-sm bg-zinc-200 w-8 h-8 rounded-full text-center ml-2 opacity-75 flex justify-center items-center hover:bg-[var(--blue-color)] hover:text-white hover:opacity-100 cursor-pointer duration-200"
+                  ></i>
+                </div>
+                <span>
+                  <img
+                    src="images/Friends/friend-01.jpg"
+                    class="w-24 rounded-full"
+                  />
+                </span>
+                <h1 class="font-bold">Gareeb Elshiekh</h1>
+                <p class="opacity-70 text-sm">JavaScript Developer</p>
+              </div>
+              <div
+                class="flex flex-col w-full font-semibold gap-3 text-sm pb-5 mb-4 border-b border-solid relative"
+              >
+                <div class="flex gap-4 items-center">
+                  <i class="fa-regular fa-face-smile"></i>
+                  <span>90 Friend</span>
+                </div>
+                <div class="flex gap-3 items-center">
+                  <i class="fa-solid fa-code-commit"></i>
+                  <span>15 Projects</span>
+                </div>
+                <div class="flex gap-4 items-center">
+                  <i class="fa-regular fa-newspaper"></i>
+                  <span>25 Articles</span>
+                </div>
+                <span
+                  class="absolute top-1/2 translate-y-[-60%] right-0 text-[var(--orange-color)] tracking-[3px] text-6xl opacity-20"
+                  >VIP</span
+                >
+              </div>
+              <div class="flex justify-between items-center w-full">
+                <span class="text-xs opacity-80">Joined 28/08/2020 </span>
+                <div class="text-sm flex gap-1">
+                  <a
+                    href="Profile.html"
+                    class="text-white px-2 py-0.5 rounded-[4px] bg-[var(--blue-color)] hover:bg-[var(--blue-alt-color)]"
+                    >Profile</a
+                  >
+                  <a
+                    href="#"
+                    class="text-white px-2 py-0.5 rounded-[4px] bg-[var(--red-color)] hover:bg-[#d93529]"
+                    >Remove</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col bg-white items-center px-4 py-5 rounded-md"
+            >
+              <div
+                class="flex flex-col gap-2 items-center pb-5 mb-4 border-b border-solid w-full relative"
+              >
+                <div class="absolute top-0 -left-3 flex">
+                  <i
+                    class="fa-solid fa-phone text-sm bg-zinc-200 w-8 h-8 rounded-full text-center ml-2 opacity-75 flex justify-center items-center hover:bg-[var(--blue-color)] hover:text-white hover:opacity-100 cursor-pointer duration-200"
+                  ></i>
+                  <i
+                    class="fa-regular fa-envelope text-sm bg-zinc-200 w-8 h-8 rounded-full text-center ml-2 opacity-75 flex justify-center items-center hover:bg-[var(--blue-color)] hover:text-white hover:opacity-100 cursor-pointer duration-200"
+                  ></i>
+                </div>
+                <span>
+                  <img
+                    src="images/Friends/friend-03.jpg"
+                    class="w-24 rounded-full"
+                  />
+                </span>
+                <h1 class="font-bold">Hamza</h1>
+                <p class="opacity-70 text-sm">Front-End Developer</p>
+              </div>
+              <div
+                class="flex flex-col w-full font-semibold gap-3 text-sm pb-5 mb-4 border-b border-solid"
+              >
+                <div class="flex gap-4 items-center">
+                  <i class="fa-regular fa-face-smile"></i>
+                  <span>80 Friend</span>
+                </div>
+                <div class="flex gap-3 items-center">
+                  <i class="fa-solid fa-code-commit"></i>
+                  <span>20 Projects</span>
+                </div>
+                <div class="flex gap-4 items-center">
+                  <i class="fa-regular fa-newspaper"></i>
+                  <span>18 Articles</span>
+                </div>
+              </div>
+              <div class="flex justify-between items-center w-full">
+                <span class="text-xs opacity-80">Joined 02/06/2020 </span>
+                <div class="text-sm flex gap-1">
+                  <a
+                    href="Profile.html"
+                    class="text-white px-2 py-0.5 rounded-[4px] bg-[var(--blue-color)] hover:bg-[var(--blue-alt-color)]"
+                    >Profile</a
+                  >
+                  <a
+                    href="#"
+                    class="text-white px-2 py-0.5 rounded-[4px] bg-[var(--red-color)] hover:bg-[#d93529]"
+                    >Remove</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
